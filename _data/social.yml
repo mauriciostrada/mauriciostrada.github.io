@@ -1,0 +1,15 @@
+- name: Facebook
+  url: https://www.facebook.com/MAURICIO-STRADA-PHOTOGRAPHY-309168785766155/
+  icon: fa-brands fa-facebook-f
+- name: X
+  url: https://twitter.com/MAURICIO_STRADA
+  icon: fa-brands fa-x-twitter
+- name: Instagram
+  url: https://www.instagram.com/mauriciostradaphotography/
+  icon: fa-brands fa-instagram
+- name: YouTube
+  url: https://www.youtube.com/channel/UCnVzKDZUckv9tDaYOVnfdmg?view_as=subscriber
+  icon: fa-brands fa-youtube
+- name: Vimeo
+  url: https://vimeo.com/user11745978
+  icon: fa-brands fa-vimeo-v

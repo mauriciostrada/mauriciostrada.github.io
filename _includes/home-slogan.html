@@ -1,0 +1,4 @@
+{% assign slogan = include.text | default: "Una imagen vale mas que mil palabras" %}
+<div class="home-slogan{% if include.position %} home-slogan--{{ include.position }}{% endif %}">
+  {{ slogan }}
+</div>

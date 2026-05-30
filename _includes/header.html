@@ -1,0 +1,33 @@
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <div class="header-logo">
+      <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="site-logo">
+      </a>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="site-nav" id="site-nav" role="navigation">
+      <ul class="nav-list">
+        {% for item in site.data.navigation %}
+          {% assign item_path = item.url | remove: '/' %}
+          <li class="nav-item{% if page.url contains item.url %} active{% endif %}">
+            <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="nav-extras mobile-only">
+        {% include social-icons.html %}
+        {% include contact-icons.html %}
+      </div>
+    </nav>
+
+    <div class="header-tools desktop-only">
+      {% include language-selector.html %}
+    </div>
+  </div>
+</header>
+<div class="header-spacer" id="header-spacer"></div>

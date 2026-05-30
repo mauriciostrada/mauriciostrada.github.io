@@ -1,0 +1,11 @@
+# Menú principal (sin submenús por ahora)
+- title: HOME
+  url: /web/
+- title: Galerie
+  url: /galerias/
+- title: Über Mauricio
+  url: /biografia/
+- title: Visitas
+  url: /visitas/
+- title: Kontakt
+  url: /contactar/

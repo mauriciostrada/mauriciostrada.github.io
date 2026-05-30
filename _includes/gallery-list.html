@@ -1,0 +1,8 @@
+<ul class="gallery-list">
+  {% for gallery in site.data.galleries %}
+    <li>
+      <a href="{{ gallery.url | relative_url }}">{{ gallery.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<p><em>Las sub-galerías se añadirán en una fase posterior.</em></p>

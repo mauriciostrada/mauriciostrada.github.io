@@ -1,0 +1,13 @@
+- title: Blog
+  url: /servicios/
+  image: /assets/images/block-blog.jpg
+  alt: Blog
+- title: WEB
+  url: /web/
+  image: /assets/images/block-web.jpg
+  alt: WEB
+- title: Instagram
+  url: https://www.instagram.com/mauriciostradaphotography/
+  image: /assets/images/block-instagram.jpg
+  alt: Instagram
+  external: true

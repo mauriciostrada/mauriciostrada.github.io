@@ -1,0 +1,25 @@
+title: MauricioStradaPhotography.com
+description: >
+  Fotógrafo profesional de bodas, comuniones, books, estudio, reportajes,
+  fotografía erótica, publicidad, de producto y alimentación.
+url: https://mauriciostradaphotography.com
+email: mauriciostradaphotography@gmail.com
+lang: es
+
+phone:
+  es: "+34 643 85 18 84"
+  ch: "+41 779448470"
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

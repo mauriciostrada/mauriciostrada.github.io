@@ -1,0 +1,76 @@
+<form class="contact-form" id="contact-form" action="mailto:{{ site.email }}" method="post" enctype="text/plain">
+  <div class="form-group">
+    <label for="contact-name">Name, vorname <span class="required">*</span></label>
+    <input type="text" id="contact-name" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="contact-phone">Telefon</label>
+    <input type="tel" id="contact-phone" name="phone">
+  </div>
+
+  <div class="form-group">
+    <label for="contact-email">EMail <span class="required">*</span></label>
+    <input type="email" id="contact-email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="contact-message">Schreiben Sie mir <span class="required">*</span></label>
+    <textarea id="contact-message" name="message" rows="5" required></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="contact-event">Tipo de evento</label>
+    <select id="contact-event" name="event">
+      <option value="">Elige ...</option>
+      <option>Boda</option>
+      <option>Comunión</option>
+      <option>Bebés</option>
+      <option>Book</option>
+      <option>fashion</option>
+      <option>Fotografía Erótica</option>
+      <option>Eventos</option>
+      <option>Publicidad</option>
+      <option>Industrial</option>
+      <option>Viajes</option>
+      <option>Arquitectura</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="contact-date">Fecha</label>
+      <input type="date" id="contact-date" name="date">
+    </div>
+    <div class="form-group">
+      <label for="contact-time">Hora</label>
+      <input type="time" id="contact-time" name="time">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="contact-place">Lugar</label>
+    <input type="text" id="contact-place" name="place">
+  </div>
+
+  <div class="form-group">
+    <label for="contact-source">Cómo nos has conocido</label>
+    <input type="text" id="contact-source" name="source">
+  </div>
+
+  <div class="form-group form-group--inline">
+    <label for="contact-spam"><span class="required">*</span> 2 + 4 =</label>
+    <input type="number" id="contact-spam" name="spam" required>
+  </div>
+
+  <div class="form-group form-group--checkbox">
+    <input type="checkbox" id="contact-legal" name="legal" required>
+    <label for="contact-legal">
+      Acepto el <a href="#" data-legal-open="aviso">aviso legal</a> y la <a href="#" data-legal-open="privacidad">política de privacidad</a>.
+      <span class="required">*</span>
+    </label>
+  </div>
+
+  <button type="submit" class="btn-submit">ENVIAR</button>
+  <p class="form-legend">* Datos obligatorios</p>
+</form>

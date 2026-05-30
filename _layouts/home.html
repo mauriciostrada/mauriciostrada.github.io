@@ -1,0 +1,21 @@
+---
+layout: default
+body_class: page-home
+hide_footer: false
+---
+
+<section class="home-hero">
+  {% include hero-logo.html %}
+
+  <div class="home-content">
+    {% include home-slogan.html position="top" %}
+
+    <div class="home-blocks-wrap">
+      {% include home-blocks.html %}
+    </div>
+
+    {% include home-slogan.html position="bottom" %}
+  </div>
+</section>
+
+{% include home-text-section.html %}

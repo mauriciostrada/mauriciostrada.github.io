@@ -1,0 +1,12 @@
+<div class="home-blocks">
+  {% for block in site.data.home-blocks %}
+    <div class="home-block">
+      <a href="{% if block.external %}{{ block.url }}{% else %}{{ block.url | relative_url }}{% endif %}"
+         class="home-block-link"
+         {% if block.external %}target="_blank" rel="noopener"{% endif %}>
+        <img src="{{ block.image | relative_url }}" alt="{{ block.alt }}" class="home-block-image">
+        <div class="home-block-title">{{ block.title }}</div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

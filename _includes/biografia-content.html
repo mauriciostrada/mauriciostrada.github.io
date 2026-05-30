@@ -1,0 +1,59 @@
+<section class="biografia-page">
+  <div class="biografia-panel">
+    <h2 class="biografia-headline">I´m Mauricio</h2>
+
+    <div class="biografia-columns">
+      <div class="biografia-col biografia-col--text">
+        <p class="biografia-lead"><strong>a wedding photographer based in Switzerland</strong></p>
+        <p>For more than 11 years, I have been capturing meaningful moments in people's lives, always with a calm, organized and natural approach.</p>
+        <p>I believe great wedding photography is not only about beautiful images, but about trust, planning and emotional connection.</p>
+        <p>Every couple is different. That's why I take time to understand who you are, what matters to you, and how you want to experience your wedding day.</p>
+        <p>My goal is simple: to help you enjoy your day without stress, while I document it in an authentic and timeless way.</p>
+        <p>I was born in Colombia and moved to Europe in 2001.</p>
+        <p>I studied Art Photography in the Canary Islands and later worked as a freelance photographer in Madrid, collaborating with international media and artists.</p>
+        <p>Today, I am based in Bern and available throughout Switzerland and Europe.</p>
+        <p>I work with couples who value natural moments, emotional storytelling and a well-planned wedding experience.</p>
+        <p>It would be an honor to document your story and create images that you will relive with the same emotion, even many years from now.</p>
+      </div>
+
+      <div class="biografia-col biografia-col--photo">
+        <img
+          src="{{ '/assets/images/biografia/mauricio.jpg' | relative_url }}"
+          alt="Mauricio Strada - fotógrafo profesional"
+          class="biografia-photo"
+          loading="eager"
+        >
+      </div>
+    </div>
+
+    <div class="biografia-extra">
+      <p>
+        <em>Puedes ver como se realizan nuestros proyectos en las galerias, en los detrás de cámaras de algunos trabajos,</em>
+        <a href="{{ '/galerias/videos-externos/' | relative_url }}">aquí tienes el enlace</a>.
+        Tampoco dudes en comunicarnos
+        <a href="{{ '/contactar/' | relative_url }}">aquí en este enlace de contacto</a>,
+        cualquier pregunta o información que tengas.
+      </p>
+
+      <p>aquí te comparto este video, ya de hace algunos añitos, de una entrevista que me hicieron, así me ves y te llevas una idea sobre mi.</p>
+
+      <div class="biografia-video">
+        <iframe src="https://www.youtube.com/embed/zHuv_GUgaks" title="Entrevista Mauricio Strada" allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <h3>Eventos que ha cubierto como freeLance</h3>
+      <ul class="biografia-list">
+        {% for event in site.data.biografia-events %}
+          <li>{{ event }}</li>
+        {% endfor %}
+      </ul>
+
+      <h3><em>EXPOSICIONES</em></h3>
+      <ul class="biografia-list">
+        {% for item in site.data.biografia-exhibitions %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

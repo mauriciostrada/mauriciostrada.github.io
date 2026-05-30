@@ -1,0 +1,6 @@
+<nav class="footer-legal-links" aria-label="Información legal">
+  {% for item in site.data.footer-legal %}
+    {% unless forloop.first %}<span class="footer-sep">-</span>{% endunless %}
+    <a href="#" class="footer-legal-link" data-legal-open="{{ item.id }}">{{ item.title }}</a>
+  {% endfor %}
+</nav>

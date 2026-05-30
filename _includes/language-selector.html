@@ -1,0 +1,5 @@
+<select class="language-selector notranslate" title="Selecciona el idioma para la web" aria-label="Idioma">
+  {% for lang in site.data.languages %}
+    <option value="{{ lang.code }}" {% if lang.code == site.lang %}selected{% endif %} data-lang="{{ lang.name }}">{{ lang.label }}</option>
+  {% endfor %}
+</select>

@@ -1,0 +1,7 @@
+<div class="social-icons">
+  {% for network in site.data.social %}
+    <a href="{{ network.url }}" class="social-link" target="_blank" rel="nofollow noopener" aria-label="{{ network.name }}" title="{{ network.name }}">
+      <i class="{{ network.icon }}"></i>
+    </a>
+  {% endfor %}
+</div>
