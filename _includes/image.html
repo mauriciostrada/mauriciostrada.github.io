@@ -1,0 +1,12 @@
+{% comment %}
+  Uso: {% include image.html src="/assets/images/foo.jpg" alt="Descripción" class="mi-clase" %}
+{% endcomment %}
+<img
+  src="{{ include.src | relative_url }}"
+  alt="{{ include.alt | default: '' | escape }}"
+  {% if include.class %}class="{{ include.class }}"{% endif %}
+  {% if include.width %}width="{{ include.width }}"{% endif %}
+  {% if include.height %}height="{{ include.height }}"{% endif %}
+  loading="lazy"
+  decoding="async"
+>

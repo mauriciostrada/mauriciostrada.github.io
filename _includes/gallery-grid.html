@@ -1,0 +1,47 @@
+{% assign gallery_folder = include.folder | default: page.gallery_folder %}
+{% assign images = site.data.gallery_catalog[gallery_folder] %}
+
+{% if images == nil or images.size == 0 %}
+  <p class="gallery-empty">No hay imágenes en esta galería todavía.</p>
+{% else %}
+  <div class="gallery-grid" data-gallery-grid>
+    {% for image in images %}
+      <button
+        type="button"
+        class="gallery-item"
+        data-gallery-index="{{ forloop.index0 }}"
+        aria-label="Ver imagen {{ forloop.index }} de {{ images.size }}"
+      >
+        <img
+          class="gallery-lazy-img"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-src="{{ image.path | relative_url }}"
+          alt="{{ image.alt | escape }}"
+          decoding="async"
+        >
+      </button>
+    {% endfor %}
+  </div>
+
+  <div class="gallery-lightbox" id="gallery-lightbox" hidden aria-hidden="true">
+    <button type="button" class="gallery-lightbox-close" data-gallery-close aria-label="Cerrar">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button type="button" class="gallery-lightbox-nav gallery-lightbox-prev" data-gallery-prev aria-label="Anterior">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" class="gallery-lightbox-nav gallery-lightbox-next" data-gallery-next aria-label="Siguiente">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <div class="gallery-lightbox-stage">
+      <img src="" alt="" id="gallery-lightbox-image">
+    </div>
+    <p class="gallery-lightbox-counter" id="gallery-lightbox-counter"></p>
+  </div>
+
+  <script type="application/json" id="gallery-lightbox-data">[
+    {%- for image in images -%}
+      {"path":{{ image.path | relative_url | jsonify }},"alt":{{ image.alt | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]</script>
+{% endif %}

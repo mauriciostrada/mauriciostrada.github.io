@@ -4,7 +4,8 @@
       <img
         src="{{ image.file | relative_url }}"
         alt="{{ image.alt | default: image.title }}"
-        {% if forloop.first %}loading="eager"{% else %}loading="lazy"{% endif %}
+        loading="lazy"
+        decoding="async"
       >
     </div>
   {% endfor %}

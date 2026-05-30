@@ -4,7 +4,7 @@
   <body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-    {% unless page.slideshow %}
+    {% unless page.slideshow or page.gallery_folder or page.video_gallery %}
       <div class="page-bg" style="background-image: url('{{ '/assets/images/background.jpg' | relative_url }}');" aria-hidden="true"></div>
     {% endunless %}
 
@@ -30,6 +30,15 @@
     <script src="{{ '/assets/js/legal-modal.js' | relative_url }}" defer></script>
     {% if page.slideshow %}
       <script src="{{ '/assets/js/slideshow.js' | relative_url }}" defer></script>
+    {% endif %}
+    {% if page.gallery_folder or page.video_gallery %}
+      <script src="{{ '/assets/js/lazy-images.js' | relative_url }}" defer></script>
+    {% endif %}
+    {% if page.gallery_folder %}
+      <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
+    {% endif %}
+    {% if page.video_gallery %}
+      <script src="{{ '/assets/js/video-gallery.js' | relative_url }}" defer></script>
     {% endif %}
   </body>
 </html>

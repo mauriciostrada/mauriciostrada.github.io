@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kontakt
+title: Contacto
 section_class: page-section--contact
 permalink: /contactar/
 ---

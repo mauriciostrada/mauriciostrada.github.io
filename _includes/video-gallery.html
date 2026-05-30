@@ -1,0 +1,56 @@
+{% assign videos = site.data.videos-externos %}
+
+{% if videos == nil or videos.size == 0 %}
+  <p class="gallery-empty">No hay vídeos en esta galería todavía.</p>
+{% else %}
+  <div class="video-gallery-grid" data-video-gallery-grid>
+    {% for video in videos %}
+      <button
+        type="button"
+        class="video-gallery-item"
+        data-video-index="{{ forloop.index0 }}"
+        aria-label="Reproducir: {{ video.title | escape }}"
+      >
+        {% if video.thumb %}
+          <img
+            class="gallery-lazy-img"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-src="{{ video.thumb | relative_url }}"
+            alt="{{ video.title | escape }}"
+            decoding="async"
+          >
+        {% else %}
+          <span class="video-gallery-placeholder" aria-hidden="true">
+            <i class="fa-brands fa-youtube"></i>
+          </span>
+        {% endif %}
+        <span class="video-gallery-play" aria-hidden="true">
+          <i class="fa-solid fa-play"></i>
+        </span>
+        <span class="video-gallery-caption">{{ video.title }}</span>
+      </button>
+    {% endfor %}
+  </div>
+
+  <div class="gallery-lightbox video-lightbox" id="video-lightbox" hidden aria-hidden="true">
+    <button type="button" class="gallery-lightbox-close" data-video-close aria-label="Cerrar">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="video-lightbox-stage">
+      <iframe
+        id="video-lightbox-iframe"
+        title=""
+        src=""
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="gallery-lightbox-counter" id="video-lightbox-title"></p>
+  </div>
+
+  <script type="application/json" id="video-lightbox-data">[
+    {%- for video in videos -%}
+      {"youtube_id":{{ video.youtube_id | jsonify }},"title":{{ video.title | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]</script>
+{% endif %}

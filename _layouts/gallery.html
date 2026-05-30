@@ -1,0 +1,15 @@
+---
+layout: default
+body_class: page-gallery
+---
+
+<section class="gallery-page">
+  <header class="gallery-header">
+    <h1 class="gallery-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="gallery-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  {% include gallery-grid.html %}
+</section>

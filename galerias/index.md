@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Galerie
+title: Galerías
 permalink: /galerias/
 ---
 

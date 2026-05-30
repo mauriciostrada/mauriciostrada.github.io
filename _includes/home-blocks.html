@@ -4,7 +4,7 @@
       <a href="{% if block.external %}{{ block.url }}{% else %}{{ block.url | relative_url }}{% endif %}"
          class="home-block-link"
          {% if block.external %}target="_blank" rel="noopener"{% endif %}>
-        <img src="{{ block.image | relative_url }}" alt="{{ block.alt }}" class="home-block-image">
+        <img src="{{ block.image | relative_url }}" alt="{{ block.alt }}" class="home-block-image" loading="lazy" decoding="async">
         <div class="home-block-title">{{ block.title }}</div>
       </a>
     </div>

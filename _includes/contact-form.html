@@ -1,33 +1,33 @@
 <form class="contact-form" id="contact-form" action="mailto:{{ site.email }}" method="post" enctype="text/plain">
   <div class="form-group">
-    <label for="contact-name">Name, vorname <span class="required">*</span></label>
+    <label for="contact-name">Nombre y apellidos <span class="required">*</span></label>
     <input type="text" id="contact-name" name="name" required>
   </div>
 
   <div class="form-group">
-    <label for="contact-phone">Telefon</label>
+    <label for="contact-phone">Teléfono</label>
     <input type="tel" id="contact-phone" name="phone">
   </div>
 
   <div class="form-group">
-    <label for="contact-email">EMail <span class="required">*</span></label>
+    <label for="contact-email">Correo electrónico <span class="required">*</span></label>
     <input type="email" id="contact-email" name="email" required>
   </div>
 
   <div class="form-group">
-    <label for="contact-message">Schreiben Sie mir <span class="required">*</span></label>
+    <label for="contact-message">Mensaje <span class="required">*</span></label>
     <textarea id="contact-message" name="message" rows="5" required></textarea>
   </div>
 
   <div class="form-group">
     <label for="contact-event">Tipo de evento</label>
     <select id="contact-event" name="event">
-      <option value="">Elige ...</option>
+      <option value="">Elige…</option>
       <option>Boda</option>
       <option>Comunión</option>
       <option>Bebés</option>
       <option>Book</option>
-      <option>fashion</option>
+      <option>Moda</option>
       <option>Fotografía Erótica</option>
       <option>Eventos</option>
       <option>Publicidad</option>
@@ -71,6 +71,6 @@
     </label>
   </div>
 
-  <button type="submit" class="btn-submit">ENVIAR</button>
+  <button type="submit" class="btn-submit">Enviar</button>
   <p class="form-legend">* Datos obligatorios</p>
 </form>

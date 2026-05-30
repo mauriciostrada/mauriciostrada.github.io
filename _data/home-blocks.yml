@@ -1,13 +1,13 @@
 - title: Blog
   url: /servicios/
   image: /assets/images/block-blog.jpg
-  alt: Blog
-- title: WEB
+  alt: Blog del estudio
+- title: Web
   url: /web/
   image: /assets/images/block-web.jpg
-  alt: WEB
+  alt: Galería web en movimiento
 - title: Instagram
   url: https://www.instagram.com/mauriciostradaphotography/
   image: /assets/images/block-instagram.jpg
-  alt: Instagram
+  alt: Instagram de Mauricio Strada
   external: true

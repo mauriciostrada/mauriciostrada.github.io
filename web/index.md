@@ -1,6 +1,6 @@
 ---
 layout: slideshow
-title: HOME
+title: Web
 permalink: /web/
 body_class: page-slideshow
 slideshow: true
