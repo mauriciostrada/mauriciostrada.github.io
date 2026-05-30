@@ -1,228 +1,228 @@
 # Slideshow de la página WEB (extraído del sitio original)
 interval: 4000
 images:
-- file: /assets/images/web-slideshow/logo-fotos.jpg
+- file: /assets/images/web-slideshow/logo-fotos.webp
   title: "logo fotos"
   alt: "logo fotos"
-- file: /assets/images/web-slideshow/tarjeta-2021-suiza-trasera.jpg
+- file: /assets/images/web-slideshow/tarjeta-2021-suiza-trasera.webp
   title: "TARJETA 2021 SUIZA trasera"
   alt: "TARJETA 2021 SUIZA trasera"
-- file: /assets/images/web-slideshow/miami.jpg
+- file: /assets/images/web-slideshow/miami.webp
   title: "Miami"
   alt: "Miami"
-- file: /assets/images/web-slideshow/risco-famara-web.jpg
+- file: /assets/images/web-slideshow/risco-famara-web.webp
   title: "RISCO FAMARA web"
   alt: "RISCO FAMARA web"
-- file: /assets/images/web-slideshow/la-marina-amanecer-presentacion.jpg
+- file: /assets/images/web-slideshow/la-marina-amanecer-presentacion.webp
   title: "la marina amanecer presentacion"
   alt: "la marina amanecer presentacion"
-- file: /assets/images/web-slideshow/presentacion-ruta-del-quijote.jpg
+- file: /assets/images/web-slideshow/presentacion-ruta-del-quijote.webp
   title: "Presentacion ruta del quijote"
   alt: "Presentacion ruta del quijote"
-- file: /assets/images/web-slideshow/arco-del-triunfo-presentacion.jpg
+- file: /assets/images/web-slideshow/arco-del-triunfo-presentacion.webp
   title: "Arco del triunfo presentacion"
   alt: "Arco del triunfo presentacion"
-- file: /assets/images/web-slideshow/catherine-15-anos-albumfoto-1-71.jpg
+- file: /assets/images/web-slideshow/catherine-15-anos-albumfoto-1-71.webp
   title: "Catherine 15 a&ntilde;os  ALBUMfoto 1_71"
   alt: "Catherine 15 a&ntilde;os  ALBUMfoto 1_71"
-- file: /assets/images/web-slideshow/portada.jpg
+- file: /assets/images/web-slideshow/portada.webp
   title: "PORTADA"
   alt: "PORTADA"
-- file: /assets/images/web-slideshow/postbodafoto-7.jpg
+- file: /assets/images/web-slideshow/postbodafoto-7.webp
   title: "POSTBODAfoto 7"
   alt: "POSTBODAfoto 7"
-- file: /assets/images/web-slideshow/boda-1.jpg
+- file: /assets/images/web-slideshow/boda-1.webp
   title: "Boda 1"
   alt: "Boda 1"
-- file: /assets/images/web-slideshow/boda-2.jpg
+- file: /assets/images/web-slideshow/boda-2.webp
   title: "Boda 2"
   alt: "Boda 2"
-- file: /assets/images/web-slideshow/boda-3.jpg
+- file: /assets/images/web-slideshow/boda-3.webp
   title: "Boda 3"
   alt: "Boda 3"
-- file: /assets/images/web-slideshow/boda-laura-y-christian-foto2222.jpg
+- file: /assets/images/web-slideshow/boda-laura-y-christian-foto2222.webp
   title: "BODA Laura y Christian foto2222"
   alt: "BODA Laura y Christian foto2222"
-- file: /assets/images/web-slideshow/postbodafoto-1.jpg
+- file: /assets/images/web-slideshow/postbodafoto-1.webp
   title: "POSTBODAfoto 1"
   alt: "POSTBODAfoto 1"
-- file: /assets/images/web-slideshow/boda-4.jpg
+- file: /assets/images/web-slideshow/boda-4.webp
   title: "Boda 4"
   alt: "Boda 4"
-- file: /assets/images/web-slideshow/boda-5.jpg
+- file: /assets/images/web-slideshow/boda-5.webp
   title: "Boda 5"
   alt: "Boda 5"
-- file: /assets/images/web-slideshow/boda-6.jpg
+- file: /assets/images/web-slideshow/boda-6.webp
   title: "Boda 6"
   alt: "Boda 6"
-- file: /assets/images/web-slideshow/boda-7.jpg
+- file: /assets/images/web-slideshow/boda-7.webp
   title: "Boda 7"
   alt: "Boda 7"
-- file: /assets/images/web-slideshow/boda-jesuses2828.jpg
+- file: /assets/images/web-slideshow/boda-jesuses2828.webp
   title: "Boda Jesuses2828"
   alt: "Boda Jesuses2828"
-- file: /assets/images/web-slideshow/boda-8.jpg
+- file: /assets/images/web-slideshow/boda-8.webp
   title: "Boda 8"
   alt: "Boda 8"
-- file: /assets/images/web-slideshow/boda-9.jpg
+- file: /assets/images/web-slideshow/boda-9.webp
   title: "Boda 9"
   alt: "Boda 9"
-- file: /assets/images/web-slideshow/boda-10.jpg
+- file: /assets/images/web-slideshow/boda-10.webp
   title: "Boda 10"
   alt: "Boda 10"
-- file: /assets/images/web-slideshow/familias-3.jpg
+- file: /assets/images/web-slideshow/familias-3.webp
   title: "Familias 3"
   alt: "Familias 3"
-- file: /assets/images/web-slideshow/book-bebe-mario1414-retocada-2.jpg
+- file: /assets/images/web-slideshow/book-bebe-mario1414-retocada-2.webp
   title: "Book Bebe Mario1414 RETOCADA 2"
   alt: "Book Bebe Mario1414 RETOCADA 2"
-- file: /assets/images/web-slideshow/familias-1.jpg
+- file: /assets/images/web-slideshow/familias-1.webp
   title: "Familias 1"
   alt: "Familias 1"
-- file: /assets/images/web-slideshow/familias-2.jpg
+- file: /assets/images/web-slideshow/familias-2.webp
   title: "Familias 2"
   alt: "Familias 2"
-- file: /assets/images/web-slideshow/familias-4.jpg
+- file: /assets/images/web-slideshow/familias-4.webp
   title: "Familias 4"
   alt: "Familias 4"
-- file: /assets/images/web-slideshow/familias-5.jpg
+- file: /assets/images/web-slideshow/familias-5.webp
   title: "Familias 5"
   alt: "Familias 5"
-- file: /assets/images/web-slideshow/maternidad-1.jpg
+- file: /assets/images/web-slideshow/maternidad-1.webp
   title: "Maternidad  1"
   alt: "Maternidad  1"
-- file: /assets/images/web-slideshow/maternidad-2.jpg
+- file: /assets/images/web-slideshow/maternidad-2.webp
   title: "Maternidad  2"
   alt: "Maternidad  2"
-- file: /assets/images/web-slideshow/maternidad-3.jpg
+- file: /assets/images/web-slideshow/maternidad-3.webp
   title: "Maternidad  3"
   alt: "Maternidad  3"
-- file: /assets/images/web-slideshow/maternidad-4.jpg
+- file: /assets/images/web-slideshow/maternidad-4.webp
   title: "Maternidad  4"
   alt: "Maternidad  4"
-- file: /assets/images/web-slideshow/ninos-1.jpg
+- file: /assets/images/web-slideshow/ninos-1.webp
   title: "Ni&ntilde;os 1"
   alt: "Ni&ntilde;os 1"
-- file: /assets/images/web-slideshow/ninos-4.jpg
+- file: /assets/images/web-slideshow/ninos-4.webp
   title: "Ni&ntilde;os 4"
   alt: "Ni&ntilde;os 4"
-- file: /assets/images/web-slideshow/ninos-2.jpg
+- file: /assets/images/web-slideshow/ninos-2.webp
   title: "Ni&ntilde;os 2"
   alt: "Ni&ntilde;os 2"
-- file: /assets/images/web-slideshow/ninos-5.jpg
+- file: /assets/images/web-slideshow/ninos-5.webp
   title: "Ni&ntilde;os 5"
   alt: "Ni&ntilde;os 5"
-- file: /assets/images/web-slideshow/ninos-3.jpg
+- file: /assets/images/web-slideshow/ninos-3.webp
   title: "Ni&ntilde;os 3"
   alt: "Ni&ntilde;os 3"
-- file: /assets/images/web-slideshow/producto-1.jpg
+- file: /assets/images/web-slideshow/producto-1.webp
   title: "Producto 1"
   alt: "Producto 1"
-- file: /assets/images/web-slideshow/producto-2.jpg
+- file: /assets/images/web-slideshow/producto-2.webp
   title: "Producto 2"
   alt: "Producto 2"
-- file: /assets/images/web-slideshow/producto-3.jpg
+- file: /assets/images/web-slideshow/producto-3.webp
   title: "Producto 3"
   alt: "Producto 3"
-- file: /assets/images/web-slideshow/producto-4.jpg
+- file: /assets/images/web-slideshow/producto-4.webp
   title: "Producto 4"
   alt: "Producto 4"
-- file: /assets/images/web-slideshow/producto-5.jpg
+- file: /assets/images/web-slideshow/producto-5.webp
   title: "Producto 5"
   alt: "Producto 5"
-- file: /assets/images/web-slideshow/producto-6.jpg
+- file: /assets/images/web-slideshow/producto-6.webp
   title: "Producto 6"
   alt: "Producto 6"
-- file: /assets/images/web-slideshow/producto-7.jpg
+- file: /assets/images/web-slideshow/producto-7.webp
   title: "Producto 7"
   alt: "Producto 7"
-- file: /assets/images/web-slideshow/publicidad-1.jpg
+- file: /assets/images/web-slideshow/publicidad-1.webp
   title: "publicidad 1"
   alt: "publicidad 1"
-- file: /assets/images/web-slideshow/publicidad-2.jpg
+- file: /assets/images/web-slideshow/publicidad-2.webp
   title: "publicidad 2"
   alt: "publicidad 2"
-- file: /assets/images/web-slideshow/publicidad-3.jpg
+- file: /assets/images/web-slideshow/publicidad-3.webp
   title: "publicidad 3"
   alt: "publicidad 3"
-- file: /assets/images/web-slideshow/publicidad-4.jpg
+- file: /assets/images/web-slideshow/publicidad-4.webp
   title: "publicidad 4"
   alt: "publicidad 4"
-- file: /assets/images/web-slideshow/publicidad-5.jpg
+- file: /assets/images/web-slideshow/publicidad-5.webp
   title: "publicidad 5"
   alt: "publicidad 5"
-- file: /assets/images/web-slideshow/publicidad-6.jpg
+- file: /assets/images/web-slideshow/publicidad-6.webp
   title: "publicidad 6"
   alt: "publicidad 6"
-- file: /assets/images/web-slideshow/publicidad-7.jpg
+- file: /assets/images/web-slideshow/publicidad-7.webp
   title: "publicidad 7"
   alt: "publicidad 7"
-- file: /assets/images/web-slideshow/publicidad-8.jpg
+- file: /assets/images/web-slideshow/publicidad-8.webp
   title: "publicidad 8"
   alt: "publicidad 8"
-- file: /assets/images/web-slideshow/publicidad-9.jpg
+- file: /assets/images/web-slideshow/publicidad-9.webp
   title: "publicidad 9"
   alt: "publicidad 9"
-- file: /assets/images/web-slideshow/moda.jpg
+- file: /assets/images/web-slideshow/moda.webp
   title: "Moda"
   alt: "Moda"
-- file: /assets/images/web-slideshow/moda-2.jpg
+- file: /assets/images/web-slideshow/moda-2.webp
   title: "Moda 2"
   alt: "Moda 2"
-- file: /assets/images/web-slideshow/moda-3.jpg
+- file: /assets/images/web-slideshow/moda-3.webp
   title: "Moda 3"
   alt: "Moda 3"
-- file: /assets/images/web-slideshow/moda-4.jpg
+- file: /assets/images/web-slideshow/moda-4.webp
   title: "Moda 4"
   alt: "Moda 4"
-- file: /assets/images/web-slideshow/moda-6.jpg
+- file: /assets/images/web-slideshow/moda-6.webp
   title: "Moda 6"
   alt: "Moda 6"
-- file: /assets/images/web-slideshow/moda-7.jpg
+- file: /assets/images/web-slideshow/moda-7.webp
   title: "Moda 7"
   alt: "Moda 7"
-- file: /assets/images/web-slideshow/moda-8.jpg
+- file: /assets/images/web-slideshow/moda-8.webp
   title: "Moda 8"
   alt: "Moda 8"
-- file: /assets/images/web-slideshow/moda-9.jpg
+- file: /assets/images/web-slideshow/moda-9.webp
   title: "Moda 9"
   alt: "Moda 9"
-- file: /assets/images/web-slideshow/moda-10.jpg
+- file: /assets/images/web-slideshow/moda-10.webp
   title: "Moda 10"
   alt: "Moda 10"
-- file: /assets/images/web-slideshow/moda-11.jpg
+- file: /assets/images/web-slideshow/moda-11.webp
   title: "Moda 11"
   alt: "Moda 11"
-- file: /assets/images/web-slideshow/books-1.jpg
+- file: /assets/images/web-slideshow/books-1.webp
   title: "books 1"
   alt: "books 1"
-- file: /assets/images/web-slideshow/books-2.jpg
+- file: /assets/images/web-slideshow/books-2.webp
   title: "books 2"
   alt: "books 2"
-- file: /assets/images/web-slideshow/book-yenni-redes-sociales-foto1212.jpg
+- file: /assets/images/web-slideshow/book-yenni-redes-sociales-foto1212.webp
   title: "book yenni Redes sociales foto1212"
   alt: "book yenni Redes sociales foto1212"
-- file: /assets/images/web-slideshow/img-1091.jpg
+- file: /assets/images/web-slideshow/img-1091.webp
   title: "IMG_1091"
   alt: "IMG_1091"
-- file: /assets/images/web-slideshow/books-3.jpg
+- file: /assets/images/web-slideshow/books-3.webp
   title: "books 3"
   alt: "books 3"
-- file: /assets/images/web-slideshow/books-4.jpg
+- file: /assets/images/web-slideshow/books-4.webp
   title: "books 4"
   alt: "books 4"
-- file: /assets/images/web-slideshow/books-5.jpg
+- file: /assets/images/web-slideshow/books-5.webp
   title: "books 5"
   alt: "books 5"
-- file: /assets/images/web-slideshow/books-6.jpg
+- file: /assets/images/web-slideshow/books-6.webp
   title: "books 6"
   alt: "books 6"
-- file: /assets/images/web-slideshow/books-7.jpg
+- file: /assets/images/web-slideshow/books-7.webp
   title: "books 7"
   alt: "books 7"
-- file: /assets/images/web-slideshow/books-8.jpg
+- file: /assets/images/web-slideshow/books-8.webp
   title: "books 8"
   alt: "books 8"
-- file: /assets/images/web-slideshow/moda-5.jpg
+- file: /assets/images/web-slideshow/moda-5.webp
   title: "Moda 5"
   alt: "Moda 5"

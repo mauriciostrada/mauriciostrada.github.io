@@ -1,11 +1,11 @@
 # Rutas e imágenes fijas; títulos y alt en _data/i18n/*/home_blocks.*
 - key: blog
   url: /servicios/
-  image: /assets/images/block-blog.jpg
+  image: /assets/images/block-blog.webp
 - key: web
   url: /web/
-  image: /assets/images/block-web.jpg
+  image: /assets/images/block-web.webp
 - key: instagram
   url: https://www.instagram.com/mauriciostradaphotography/
-  image: /assets/images/block-instagram.jpg
+  image: /assets/images/block-instagram.webp
   external: true

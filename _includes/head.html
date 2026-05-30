@@ -23,11 +23,19 @@
     {% assign alt_url = page.url | lang_url: alt_lang %}
     <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | absolute_url }}">
   {% endfor %}
-  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/images/favicon.webp' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.webp' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script>
+    window.MSPH_I18N = {
+      storageKey: 'msph-preferred-lang',
+      defaultLang: {{ site.default_lang | default: 'es' | jsonify }},
+      langs: {{ site.languages | jsonify }}
+    };
+  </script>
+  <script src="{{ '/assets/js/lang-switch.js' | relative_url }}"></script>
 </head>
