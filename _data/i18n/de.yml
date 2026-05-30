@@ -1,0 +1,255 @@
+# Deutsche Texte. Gleiche Struktur wie es.yml.
+meta:
+  site_description: >
+    Professioneller Fotograf für Hochzeiten, Kommunionen, Books, Studio, Reportagen,
+    Erotikfotografie, Werbung, Produkt- und Food-Fotografie.
+
+ui:
+  skip_link: Zum Hauptinhalt springen
+  go_top: Nach oben
+  lang_select_title: Sprache der Website wählen
+  lang_select_label: Sprache
+  menu_open: Menü öffnen
+  menu_close: Menü schließen
+  main_nav: Hauptmenü
+  slideshow_aria: Fotopräsentation
+  required: "*"
+  required_legend: "* Pflichtfelder"
+  close: Schließen
+  previous: Zurück
+  next: Weiter
+  send: Senden
+  choose: Bitte wählen…
+  phone_label: Telefon
+  email_label: E-Mail
+
+nav:
+  web: Web
+  galleries: Galerien
+  about: Über Mauricio
+  reviews: Bewertungen
+  contact: Kontakt
+
+pages:
+  home:
+    title: Startseite
+    description: Professioneller Fotograf für Hochzeiten, Kommunionen, Books, Studio, Reportagen und mehr.
+    slogan: Ein Bild sagt mehr als tausend Worte
+  web:
+    title: Web
+  galleries_index:
+    title: Galerien
+    description: Fotogalerien für Hochzeiten, Porträts, Werbung und mehr.
+    intro: Fotogalerien von Mauricio Strada.
+  contact:
+    title: Kontakt
+    description: Kontaktieren Sie Mauricio Strada Photography.
+    phone_label: Telefon
+    email_label: E-Mail
+  reviews:
+    title: Bewertungen
+    description: Kundenbewertungen und Erfahrungsberichte zu Mauricio Strada Photography.
+    intro_strong: Hat Ihnen unsere Arbeit gefallen?
+    intro_question: Hinterlassen Sie uns Ihre Meinung.
+    intro_source: Bewertungen von Paaren, mit denen ich gearbeitet habe, veröffentlicht auf
+    intro_source_link: Bodas.net
+    empty: Es sind noch keine Bewertungen veröffentlicht. Seien Sie der Erste, der eine hinterlässt.
+    add_comment: Bewertung hinzufügen
+    hide_form: Formular ausblenden
+    form_title: Ihre Bewertung hinterlassen
+    form_note: Die Bewertung wird vor der Veröffentlichung geprüft.
+    wedding_label: "Hochzeit:"
+    published_label: "Veröffentlicht:"
+    response_label: Antwort von Mauricio Strada
+    rating_aria: von 5 Sternen
+  about:
+    title: Über Mauricio
+    description: Biografie von Mauricio Strada, Hochzeitsfotograf mit Sitz in Bern, Schweiz.
+    headline: Ich bin Mauricio
+    photo_alt: Mauricio Strada — professioneller Fotograf
+    lead: Hochzeitsfotograf mit Sitz in der Schweiz
+    paragraphs:
+      - Seit mehr als 11 Jahren halte ich bedeutungsvolle Momente im Leben der Menschen fest — stets mit einem ruhigen, organisierten und natürlichen Ansatz.
+      - Ich bin überzeugt, dass großartige Hochzeitsfotografie nicht nur schöne Bilder bedeutet, sondern Vertrauen, Planung und emotionale Verbindung.
+      - Jedes Paar ist anders. Deshalb nehme ich mir die Zeit zu verstehen, wer Sie sind, was Ihnen wichtig ist und wie Sie Ihren Hochzeitstag erleben möchten.
+      - "Mein Ziel ist einfach: Ihnen zu helfen, den Tag ohne Stress zu genießen, während ich ihn authentisch und zeitlos dokumentiere."
+      - Ich wurde in Kolumbien geboren und bin 2001 nach Europa gezogen.
+      - Ich studierte künstlerische Fotografie auf den Kanarischen Inseln und arbeitete anschließend als Freelance-Fotograf in Madrid, in Zusammenarbeit mit internationalen Medien und Künstlern.
+      - Heute lebe ich in Bern und arbeite in der Schweiz und in ganz Europa.
+      - Ich arbeite mit Paaren, die natürliche Momente, emotionale Erzählungen und eine gut geplante Hochzeit schätzen.
+      - Es wäre mir eine Ehre, Ihre Geschichte zu dokumentieren und Bilder zu schaffen, die Sie auch viele Jahre später mit derselben Emotion wieder erleben.
+    extra_before_link: Wie unsere Projekte entstehen, sehen Sie in den Galerien und in den Behind-the-Scenes-Videos einiger Arbeiten
+    extra_link_text: unter diesem Link
+    extra_after_link: .
+    extra_contact_before: Zögern Sie nicht, uns über
+    extra_contact_link: das Kontaktformular
+    extra_contact_after: zu schreiben, wenn Sie Fragen haben oder Informationen benötigen.
+    video_intro: Hier teile ich dieses Video von vor einigen Jahren — ein Interview mit mir — damit Sie mich etwas besser kennenlernen.
+    video_title: Interview mit Mauricio Strada
+    events_title: Als Freelancer abgedeckte Veranstaltungen
+    exhibitions_title: Ausstellungen
+  blog:
+    title: Blog
+    description: Artikel und Neuigkeiten aus dem Studio.
+    body: Artikel und Neuigkeiten aus dem Studio.
+
+home_blocks:
+  blog:
+    title: Blog
+    alt: Studio-Blog
+  web:
+    title: Web
+    alt: Web-Galerie in Bewegung
+  instagram:
+    title: Instagram
+    alt: Mauricio Strada auf Instagram
+
+galleries:
+  bodas:
+    title: Hochzeiten
+  albumes-impresos:
+    title: Gedruckte Alben
+  book:
+    title: Book
+  erotic-photography:
+    title: Erotikfotografie
+    description: Galerie professioneller Erotikfotografie.
+  celebridades:
+    title: Prominente
+  publicidad:
+    title: Werbung
+  viajes:
+    title: Reisen
+  ninos:
+    title: Kinder
+  producto:
+    title: Produkt
+  retratos-de-familia:
+    title: Familienporträts
+  videos-externos:
+    title: Externe Videos
+    description: Hochzeitsvideos, Porträts, Prominente und mehr.
+
+gallery_ui:
+  empty: In dieser Galerie sind noch keine Bilder vorhanden.
+  view_image: Bild ansehen
+  of: von
+  play_video: "Abspielen:"
+
+forms:
+  contact:
+    name: Vor- und Nachname
+    phone: Telefon
+    email: E-Mail
+    message: Nachricht
+    event_type: Art der Veranstaltung
+    date: Datum
+    time: Uhrzeit
+    place: Ort
+    source: Wie haben Sie uns gefunden
+    spam: 2 + 4 =
+    legal: Ich akzeptiere die
+    legal_notice: rechtlichen Hinweise
+    legal_and: "und die"
+    privacy: Datenschutzerklärung
+    spam_error: Bitte lösen Sie die Anti-Spam-Aufgabe korrekt.
+    events:
+      - Hochzeit
+      - Kommunion
+      - Babys
+      - Book
+      - Mode
+      - Erotikfotografie
+      - Veranstaltungen
+      - Werbung
+      - Industrie
+      - Reisen
+      - Architektur
+  reviews:
+    subject: Neue Bewertung — Bewertungen
+    name: Name
+    email: E-Mail
+    message: Kommentar
+    spam: 6 + 2 =
+    spam_hint: Antworten Sie mit 8, um das Formular zu senden.
+    spam_error: Die Überprüfung ist nicht korrekt. 6 + 2 = 8
+    legal: Ich habe die
+    legal_notice: rechtlichen Hinweise gelesen und akzeptiere sie
+
+legal:
+  modal_title: Rechtliche Informationen
+  tabs:
+    aviso: Impressum
+    cookies: Cookie-Richtlinie
+    privacidad: Datenschutzerklärung
+
+contact_icons:
+  call: Anrufen
+  call_title: Anrufen
+  sms: SMS
+  sms_title: SMS
+  whatsapp: WhatsApp
+
+biografia_events:
+  - Gala der 40 Principales Awards, Grupo Prisa 2012
+  - Standbildfotografie — Kurzfilm Crépuscule à la Menier — Regie Gabriel Beitia — 2012
+  - Premiere Tadeo Jones — Telecinco — Mediaset
+  - Premiere The Twilight Saga: Breaking Dawn Part II — Antena 3
+  - Standbildfotografie — Kurzfilm Crépuscule à la Menier — Regie Gabriel Beitia — 2012
+  - Standbildfotografie — Kurzdokumentarfilm Rosas — Regie Marianella Senatore — 2012
+  - Fotoproduktion und Schnitt — Behind-the-Scenes-Video — Kalender 2016 LA KAMA BAR — Dezember 2015
+  - Interview und Konzert — Maluma-Tour 2016
+  - Filmen und Schnitt — Interview Kevin Roldan Madrid 2016
+  - Ana-Gabriel-Konzert 2016
+  - Pressekonferenz Camilo Sesto 2016
+  - Pressekonferenz David Bisbal — Launch neues Album 2016
+  - Gala der 40 Principales Awards Barcelona, Grupo Prisa 2016
+  - Pressekonferenz — kolumbianische Komikerin und Schauspielerin Alejandra Azcárate 2016
+  - Interview Manuel Medrano — Warner Music Madrid 2016
+  - Filmen und Interview — Silvestre Dangond, Sony Music 2016
+  - Filmen und Schnitt — Interview und Fotos, Carlos-Vives-Konzert, Wizink Center Madrid 2017
+  - Filmen und Schnitt — Interview und Fotos, Santiago-Cruz-Konzert Madrid 2017
+
+biografia_exhibitions:
+  - "Gruppenausstellung Pride 2009, Homophobie — Galerie Almacén, Arrecife. Juni 2009"
+  - "Gruppenausstellung Miradas. Magazin Mass Cultura. Diskothek Ococo, Sommer 2009"
+  - "Einzelausstellung Die Sinnlichkeit der Körper. Lanzarote Off Biennale 2009, Bar L´strada, Oktober 2009"
+  - "1. Platz — Internationaler Wettbewerb für Erotikfotografie San Fermín / Sanfermin.com, Playboy Spanien, Oktober 2009"
+  - "Gruppenausstellung Pride 2010 TRANX_NOCHADA — bilden, um zu transformieren. Juli 2010"
+  - "Einzelausstellung Todsünde. Rathaus Tías, Jugendreferat. November 2011"
+
+videos:
+  3i_Mwfgfatg:
+    title: "Portfolio Mauricio Strada Photography 2020"
+  2TSc4jIqYJk:
+    title: "Zweisprachige Hochzeit — Englisch und Spanisch"
+  syFRYb39iaE:
+    title: "Hochzeitsportfolio"
+  DElxG3or5BM:
+    title: "Hochzeit von Sebastián und Patricia in der Schweiz"
+  c0VwlbMIIwM:
+    title: "Making-of Kalender 2018 — Brautkleiddesigner"
+  AOTu4tbgekY:
+    title: "Audiovisuell vom Hochzeitstag — Fotos in Bewegung"
+  aJmuSQgg10Q:
+    title: "Pre-Wedding — Verlobung / Save the Date"
+  gdHj_YzhtUQ:
+    title: "Präsentation digitaler Alben"
+  FiZMCCX2Fx8:
+    title: "Umstyling Nallely Capellan — 40 Principales"
+  GIdiKpnUXYE:
+    title: "Interview mit Prince Royce"
+  6pchmrIUyxg:
+    title: "Autogrammstunde Maluma"
+  ipMYiruwda0:
+    title: "Porträts — virtueller Kalender April 2014"
+  IhebSJDsab8:
+    title: "Geburtstagsüberraschung — Glückwunschvideo"
+  mDT8Cv4i-7M:
+    title: "Hochzeit von Jackie und Frederick — Zusammenfassungsvideo"
+  GjceutI6XDs:
+    title: "Pressekonferenz David Bisbal"
+  AQiDKB4IWIo:
+    title: "40. Geburtstag von Sandra Felisa in Miami — Überraschung"
+  hysVpzlakTs:
+    title: "Interview mit Manuel Medrano"

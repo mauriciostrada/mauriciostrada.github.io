@@ -5,6 +5,12 @@ description: >
 url: https://mauriciostradaphotography.com
 email: mauriciostradaphotography@gmail.com
 lang: es
+default_lang: es
+languages:
+  - es
+  - de
+  - en
+  - fr
 
 phone:
   es: "+34 643 85 18 84"
@@ -12,6 +18,11 @@ phone:
 
 sass:
   style: compressed
+  sourcemap: never
+
+# jekyll-polyglot: no duplicar estáticos en /de/, /en/, /fr/
+exclude_from_localization:
+  - assets
 
 exclude:
   - Gemfile
@@ -26,6 +37,7 @@ defaults:
       path: ""
     values:
       layout: default
+      lang: es
 
   - scope:
       path: "galerias"
@@ -44,3 +56,8 @@ defaults:
       scripts:
         - lazy-images
         - video-gallery
+
+parallel_localization: true
+
+plugins:
+  - jekyll-polyglot

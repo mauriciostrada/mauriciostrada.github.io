@@ -1,8 +1,15 @@
-{% assign reviews = site.data.visitas.reviews %}
+{% assign lang = site.active_lang | default: 'es' %}
+{% assign reviews = site.data.reviews[lang].reviews %}
+{% if reviews == nil or reviews.size == 0 %}
+  {% assign reviews = site.data.reviews.es.reviews %}
+{% endif %}
 
 <div class="visitas-intro">
-  <p><strong>¿Te ha gustado nuestro trabajo?</strong> Déjanos tu opinión.</p>
-  <p>Opiniones de parejas con las que he trabajado, publicadas en <a href="https://www.bodas.net" target="_blank" rel="noopener noreferrer">Bodas.net</a>.</p>
+  <p><strong>{{ t.pages.reviews.intro_strong }}</strong> {{ t.pages.reviews.intro_question }}</p>
+  <p>
+    {{ t.pages.reviews.intro_source }}
+    <a href="https://www.bodas.net" target="_blank" rel="noopener noreferrer">{{ t.pages.reviews.intro_source_link }}</a>.
+  </p>
 </div>
 
 <div class="visitas-reviews" id="visitas-reviews">
@@ -13,7 +20,7 @@
           <header class="visitas-review-header">
             <cite class="visitas-review-author">{{ review.author }}</cite>
             {% if review.rating %}
-              <span class="visitas-review-rating" aria-label="{{ review.rating }} de 5 estrellas">
+              <span class="visitas-review-rating" aria-label="{{ review.rating }} {{ t.pages.reviews.rating_aria }}">
                 {% for i in (1..5) %}
                   <i class="fa-solid fa-star{% unless i <= review.rating %} visitas-star--empty{% endunless %}" aria-hidden="true"></i>
                 {% endfor %}
@@ -26,10 +33,10 @@
           <blockquote class="visitas-review-text">{{ review.text }}</blockquote>
           <footer class="visitas-review-meta">
             {% if review.wedding_date %}
-              <span class="visitas-review-wedding">Boda: {{ review.wedding_date | date: "%d/%m/%Y" }}</span>
+              <span class="visitas-review-wedding">{{ t.pages.reviews.wedding_label }} {{ review.wedding_date | date: "%d/%m/%Y" }}</span>
             {% endif %}
             {% if review.date %}
-              <time class="visitas-review-date" datetime="{{ review.date }}">Publicada: {{ review.date | date: "%d/%m/%Y" }}</time>
+              <time class="visitas-review-date" datetime="{{ review.date }}">{{ t.pages.reviews.published_label }} {{ review.date | date: "%d/%m/%Y" }}</time>
             {% endif %}
             {% if review.source %}
               <span class="visitas-review-source">{{ review.source }}</span>
@@ -37,7 +44,7 @@
           </footer>
           {% if review.response %}
             <div class="visitas-review-response">
-              <p class="visitas-review-response-label">Respuesta de Mauricio Strada</p>
+              <p class="visitas-review-response-label">{{ t.pages.reviews.response_label }}</p>
               <p>{{ review.response }}</p>
             </div>
           {% endif %}
@@ -45,7 +52,7 @@
       {% endfor %}
     </ul>
   {% else %}
-    <p class="visitas-empty">Todavía no hay reseñas publicadas. Puedes ser el primero en dejar la tuya.</p>
+    <p class="visitas-empty">{{ t.pages.reviews.empty }}</p>
   {% endif %}
 </div>
 
@@ -57,14 +64,16 @@
       id="visitas-form-toggle"
       aria-expanded="false"
       aria-controls="visitas-form-panel"
+      data-label-open="{{ t.pages.reviews.add_comment }}"
+      data-label-close="{{ t.pages.reviews.hide_form }}"
     >
-      Añadir comentario
+      {{ t.pages.reviews.add_comment }}
     </button>
   </div>
 
   <div class="visitas-form-panel" id="visitas-form-panel" hidden>
-    <h2 class="section-title section-title--sub">Deja tu comentario</h2>
-    <p class="visitas-form-note">El comentario se revisará antes de publicarlo.</p>
+    <h2 class="section-title section-title--sub">{{ t.pages.reviews.form_title }}</h2>
+    <p class="visitas-form-note">{{ t.pages.reviews.form_note }}</p>
     {% include visitas-form.html %}
   </div>
 </div>

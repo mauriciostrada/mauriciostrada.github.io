@@ -1,0 +1,255 @@
+# English texts. Same structure as es.yml.
+meta:
+  site_description: >
+    Professional photographer for weddings, communions, portfolio sessions, studio work,
+    reportage, erotic photography, advertising, product and food photography.
+
+ui:
+  skip_link: Skip to main content
+  go_top: Back to top
+  lang_select_title: Select the language for the website
+  lang_select_label: Language
+  menu_open: Open menu
+  menu_close: Close menu
+  main_nav: Main menu
+  slideshow_aria: Photo presentation
+  required: "*"
+  required_legend: "* Required fields"
+  close: Close
+  previous: Previous
+  next: Next
+  send: Send
+  choose: Choose…
+  phone_label: Phone
+  email_label: Email
+
+nav:
+  web: Web
+  galleries: Galleries
+  about: About Mauricio
+  reviews: Reviews
+  contact: Contact
+
+pages:
+  home:
+    title: Home
+    description: Professional photographer for weddings, communions, portfolio sessions, studio work, reportage and more.
+    slogan: A picture is worth a thousand words
+  web:
+    title: Web
+  galleries_index:
+    title: Galleries
+    description: Photography galleries for weddings, portraits, advertising and more.
+    intro: Photography galleries by Mauricio Strada.
+  contact:
+    title: Contact
+    description: Contact Mauricio Strada Photography.
+    phone_label: Phone
+    email_label: Email
+  reviews:
+    title: Reviews
+    description: Client reviews and testimonials for Mauricio Strada Photography.
+    intro_strong: Did you enjoy our work?
+    intro_question: Leave us your feedback.
+    intro_source: Reviews from couples I have worked with, published on
+    intro_source_link: Bodas.net
+    empty: No reviews have been published yet. You could be the first to leave yours.
+    add_comment: Add a review
+    hide_form: Hide form
+    form_title: Leave your review
+    form_note: Your review will be checked before publication.
+    wedding_label: "Wedding:"
+    published_label: "Published:"
+    response_label: Response from Mauricio Strada
+    rating_aria: out of 5 stars
+  about:
+    title: About Mauricio
+    description: Biography of Mauricio Strada, wedding photographer based in Bern, Switzerland.
+    headline: I am Mauricio
+    photo_alt: Mauricio Strada — professional photographer
+    lead: wedding photographer based in Switzerland
+    paragraphs:
+      - For more than 11 years I have been capturing meaningful moments in people's lives, always with a calm, organised and natural approach.
+      - I believe that great wedding photography is not just about beautiful images, but about trust, planning and emotional connection.
+      - Every couple is different. That is why I take the time to understand who you are, what matters to you and how you want to experience your wedding day.
+      - "My goal is simple: to help you enjoy the day without stress while I document it in an authentic and timeless way."
+      - I was born in Colombia and moved to Europe in 2001.
+      - I studied artistic photography in the Canary Islands and later worked as a freelance photographer in Madrid, collaborating with international media and artists.
+      - Today I live in Bern and work in Switzerland and across Europe.
+      - I work with couples who value natural moments, emotional storytelling and a well-planned wedding.
+      - It would be an honour to document your story and create images you will relive with the same emotion, even many years later.
+    extra_before_link: You can see how our projects come together in the galleries and in the behind-the-scenes videos of some of our work
+    extra_link_text: at this link
+    extra_after_link: .
+    extra_contact_before: Please do not hesitate to reach out via
+    extra_contact_link: the contact form
+    extra_contact_after: for any questions or information.
+    video_intro: Here I share this video, from a few years ago, of an interview I gave, so you can get to know me a little better.
+    video_title: Interview with Mauricio Strada
+    events_title: Events covered as a freelancer
+    exhibitions_title: Exhibitions
+  blog:
+    title: Blog
+    description: Articles and news from the studio.
+    body: Articles and news from the studio.
+
+home_blocks:
+  blog:
+    title: Blog
+    alt: Studio blog
+  web:
+    title: Web
+    alt: Web gallery in motion
+  instagram:
+    title: Instagram
+    alt: Mauricio Strada on Instagram
+
+galleries:
+  bodas:
+    title: Weddings
+  albumes-impresos:
+    title: Printed albums
+  book:
+    title: Portfolio
+  erotic-photography:
+    title: Erotic photography
+    description: Professional erotic photography gallery.
+  celebridades:
+    title: Celebrities
+  publicidad:
+    title: Advertising
+  viajes:
+    title: Travel
+  ninos:
+    title: Children
+  producto:
+    title: Product
+  retratos-de-familia:
+    title: Family portraits
+  videos-externos:
+    title: External videos
+    description: Wedding videos, portraits, celebrities and more.
+
+gallery_ui:
+  empty: There are no images in this gallery yet.
+  view_image: View image
+  of: of
+  play_video: "Play:"
+
+forms:
+  contact:
+    name: Full name
+    phone: Phone
+    email: Email
+    message: Message
+    event_type: Type of event
+    date: Date
+    time: Time
+    place: Location
+    source: How did you hear about us
+    spam: 2 + 4 =
+    legal: I accept the
+    legal_notice: legal notice
+    legal_and: "and the"
+    privacy: privacy policy
+    spam_error: Please solve the anti-spam calculation correctly.
+    events:
+      - Wedding
+      - Communion
+      - Babies
+      - Portfolio
+      - Fashion
+      - Erotic Photography
+      - Events
+      - Advertising
+      - Industrial
+      - Travel
+      - Architecture
+  reviews:
+    subject: New review — Reviews
+    name: Name
+    email: Email
+    message: Comment
+    spam: 6 + 2 =
+    spam_hint: Answer 8 to submit the form.
+    spam_error: Verification is incorrect. 6 + 2 = 8
+    legal: I have read and accept the
+    legal_notice: legal notice
+
+legal:
+  modal_title: Legal information
+  tabs:
+    aviso: Legal notice
+    cookies: Cookie policy
+    privacidad: Privacy policy
+
+contact_icons:
+  call: Call
+  call_title: Call
+  sms: Text message
+  sms_title: SMS
+  whatsapp: WhatsApp
+
+biografia_events:
+  - The 40 Principales Awards Gala, Grupo Prisa 2012
+  - Still photography — short film Crépuscule à la Menier — Dir. Gabriel Beitia — 2012
+  - Tadeo Jones premiere — Telecinco — Mediaset
+  - The Twilight Saga: Breaking Dawn Part II premiere — Antena 3
+  - Still photography — short film Crépuscule à la Menier — Dir. Gabriel Beitia — 2012
+  - Still photography — short documentary Rosas — Dir. Marianella Senatore — 2012
+  - Photographic production and behind-the-scenes video editing — LA KAMA BAR 2016 calendar — December 2015
+  - Interview and concert — Maluma 2016 tour
+  - Filming and editing — interview with Kevin Roldan, Madrid 2016
+  - Ana Gabriel concert 2016
+  - Camilo Sesto press conference 2016
+  - David Bisbal press conference — new album launch 2016
+  - The 40 Principales Awards Gala, Barcelona, Grupo Prisa 2016
+  - Press conference — Colombian comedian and actress Alejandra Azcárate 2016
+  - Interview with Manuel Medrano — Warner Music Madrid 2016
+  - Filming and interview — Silvestre Dangond, Sony Music 2016
+  - Filming and editing — interview and photos, Carlos Vives concert, Wizink Center Madrid 2017
+  - Filming and editing — interview and photos, Santiago Cruz concert Madrid 2017
+
+biografia_exhibitions:
+  - "Group exhibition Pride 2009, Homophobia — Almacén Art Gallery, Arrecife. June 2009"
+  - "Group exhibition Miradas. Mass Cultura magazine. Ococo nightclub, summer 2009"
+  - "Solo exhibition The sensuality of bodies. Lanzarote Off Biennial 2009, Bar L´strada, October 2009"
+  - "1st place — International Erotic Photography Competition of San Fermín / Sanfermin.com, Playboy Spain magazine, October 2009"
+  - "Group exhibition Pride 2010 TRANX_NOCHADA — educate to transform. July 2010"
+  - "Solo exhibition Capital Sin. Tías Town Hall, Youth Department. November 2011"
+
+videos:
+  3i_Mwfgfatg:
+    title: "Mauricio Strada Photography Portfolio 2020"
+  2TSc4jIqYJk:
+    title: "Bilingual wedding — English and Spanish"
+  syFRYb39iaE:
+    title: "Wedding portfolio"
+  DElxG3or5BM:
+    title: "Sebastián and Patricia's wedding in Switzerland"
+  c0VwlbMIIwM:
+    title: "2018 calendar making-of — bridal gown designer"
+  AOTu4tbgekY:
+    title: "Wedding day audiovisual — photos in motion"
+  aJmuSQgg10Q:
+    title: "Pre-wedding — engagement / Save the date"
+  gdHj_YzhtUQ:
+    title: "Digital albums showcase"
+  FiZMCCX2Fx8:
+    title: "Nallely Capellan makeover — 40 Principales"
+  GIdiKpnUXYE:
+    title: "Interview with Prince Royce"
+  6pchmrIUyxg:
+    title: "Maluma autograph signing"
+  ipMYiruwda0:
+    title: "Portraits — virtual calendar April 2014"
+  IhebSJDsab8:
+    title: "Birthday surprise — congratulatory video"
+  mDT8Cv4i-7M:
+    title: "Jackie and Frederick's wedding — highlight video"
+  GjceutI6XDs:
+    title: "David Bisbal press conference"
+  AQiDKB4IWIo:
+    title: "Sandra Felisa's 40th birthday in Miami — surprise"
+  hysVpzlakTs:
+    title: "Interview with Manuel Medrano"

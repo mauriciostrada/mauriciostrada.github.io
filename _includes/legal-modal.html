@@ -1,34 +1,40 @@
+{% assign lang = site.active_lang | default: 'es' %}
+{% assign legal = site.data.legal[lang] %}
+{% if legal == nil or legal.size == 0 %}
+  {% assign legal = site.data.legal.es %}
+{% endif %}
+
 <div id="legal-modal" class="legal-modal" hidden aria-hidden="true">
   <div class="legal-modal-overlay" data-legal-close></div>
   <div class="legal-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title">
     <div class="legal-modal-header">
-      <h2 id="legal-modal-title" class="legal-modal-title">Información legal</h2>
-      <button type="button" class="legal-modal-close" data-legal-close aria-label="Cerrar">
+      <h2 id="legal-modal-title" class="legal-modal-title">{{ legal.modal_title }}</h2>
+      <button type="button" class="legal-modal-close" data-legal-close aria-label="{{ t.ui.close }}">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
 
     <div class="legal-modal-tabs" role="tablist">
-      {% for item in site.data.footer-legal %}
-        <button
-          type="button"
-          class="legal-modal-tab{% if forloop.first %} is-active{% endif %}"
-          role="tab"
-          data-legal-tab="{{ item.id }}"
-          aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
-        >{{ item.title }}</button>
-      {% endfor %}
+      <button type="button" class="legal-modal-tab is-active" role="tab" data-legal-tab="aviso" aria-selected="true">{{ legal.tabs.aviso }}</button>
+      <button type="button" class="legal-modal-tab" role="tab" data-legal-tab="cookies" aria-selected="false">{{ legal.tabs.cookies }}</button>
+      <button type="button" class="legal-modal-tab" role="tab" data-legal-tab="privacidad" aria-selected="false">{{ legal.tabs.privacidad }}</button>
     </div>
 
     <div class="legal-modal-body">
       <div class="legal-modal-panel is-active" data-legal-panel="aviso" role="tabpanel">
-        {% include legal/aviso.html %}
+        {% for paragraph in legal.aviso %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
       </div>
       <div class="legal-modal-panel" data-legal-panel="cookies" role="tabpanel" hidden>
-        {% include legal/cookies.html %}
+        {% for paragraph in legal.cookies %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
       </div>
       <div class="legal-modal-panel" data-legal-panel="privacidad" role="tabpanel" hidden>
-        {% include legal/privacidad.html %}
+        {% for paragraph in legal.privacidad %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
       </div>
     </div>
   </div>

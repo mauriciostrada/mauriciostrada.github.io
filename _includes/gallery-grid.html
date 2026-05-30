@@ -2,7 +2,7 @@
 {% assign images = site.data.gallery_catalog[gallery_folder] %}
 
 {% if images == nil or images.size == 0 %}
-  <p class="gallery-empty">No hay imágenes en esta galería todavía.</p>
+  <p class="gallery-empty">{{ t.gallery_ui.empty }}</p>
 {% else %}
   <div class="gallery-grid" data-gallery-grid>
     {% for image in images %}
@@ -10,7 +10,7 @@
         type="button"
         class="gallery-item"
         data-gallery-index="{{ forloop.index0 }}"
-        aria-label="Ver imagen {{ forloop.index }} de {{ images.size }}"
+        aria-label="{{ t.gallery_ui.view_image }} {{ forloop.index }} {{ t.gallery_ui.of }} {{ images.size }}"
       >
         <img
           class="gallery-lazy-img"
@@ -31,13 +31,13 @@
   </div>
 
   <div class="gallery-lightbox" id="gallery-lightbox" hidden aria-hidden="true">
-    <button type="button" class="gallery-lightbox-close" data-gallery-close aria-label="Cerrar">
+    <button type="button" class="gallery-lightbox-close" data-gallery-close aria-label="{{ t.ui.close }}">
       <i class="fa-solid fa-xmark"></i>
     </button>
-    <button type="button" class="gallery-lightbox-nav gallery-lightbox-prev" data-gallery-prev aria-label="Anterior">
+    <button type="button" class="gallery-lightbox-nav gallery-lightbox-prev" data-gallery-prev aria-label="{{ t.ui.previous }}">
       <i class="fa-solid fa-chevron-left"></i>
     </button>
-    <button type="button" class="gallery-lightbox-nav gallery-lightbox-next" data-gallery-next aria-label="Siguiente">
+    <button type="button" class="gallery-lightbox-nav gallery-lightbox-next" data-gallery-next aria-label="{{ t.ui.next }}">
       <i class="fa-solid fa-chevron-right"></i>
     </button>
     <div class="gallery-lightbox-stage">

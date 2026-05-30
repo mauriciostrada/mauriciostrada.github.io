@@ -1,12 +1,8 @@
 ---
 layout: panel
-title: Galerías
+i18n_key: galleries_index
 permalink: /galerias/
 body_class: page-panel
 panel_narrow: true
-description: Galerías de fotografía de bodas, retratos, publicidad y más.
+content_include: galerias-content.html
 ---
-
-<p class="panel-intro">Galerías de fotografía de Mauricio Strada.</p>
-
-{% include gallery-list.html %}

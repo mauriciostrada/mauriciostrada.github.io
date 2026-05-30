@@ -27,7 +27,9 @@
     siteNav.classList.toggle('open', isOpen);
     document.body.classList.toggle('mobile-nav-open', isOpen);
     menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    menuToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+    var menuOpen = document.body.getAttribute('data-menu-open') || 'Open menu';
+    var menuClose = document.body.getAttribute('data-menu-close') || 'Close menu';
+    menuToggle.setAttribute('aria-label', isOpen ? menuClose : menuOpen);
     menuToggle.innerHTML = isOpen
       ? '<i class="fa-solid fa-xmark"></i>'
       : '<i class="fa-solid fa-bars"></i>';
@@ -71,7 +73,7 @@
       var spam = document.getElementById('contact-spam');
       if (spam && parseInt(spam.value, 10) !== 6) {
         event.preventDefault();
-        alert('Por favor, resuelve la operación anti-spam correctamente.');
+        alert(document.body.getAttribute('data-spam-error-contact') || 'Please complete the anti-spam check.');
       }
     });
   }

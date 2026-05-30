@@ -1,13 +1,11 @@
-- title: Blog
+# Rutas e imágenes fijas; títulos y alt en _data/i18n/*/home_blocks.*
+- key: blog
   url: /servicios/
   image: /assets/images/block-blog.jpg
-  alt: Blog del estudio
-- title: Web
+- key: web
   url: /web/
   image: /assets/images/block-web.jpg
-  alt: Galería web en movimiento
-- title: Instagram
+- key: instagram
   url: https://www.instagram.com/mauriciostradaphotography/
   image: /assets/images/block-instagram.jpg
-  alt: Instagram de Mauricio Strada
   external: true

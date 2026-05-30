@@ -1,11 +1,28 @@
+{% if page.i18n_key %}
+  {% assign page_t = t.pages[page.i18n_key] %}
+{% elsif page.gallery_folder %}
+  {% assign page_t = t.galleries[page.gallery_folder] %}
+{% endif %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="color-scheme" content="only light">
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>
+    {%- if page_t and page_t.title -%}
+      {{ page_t.title }} - {{ site.title }}
+    {%- elsif page.title -%}
+      {{ page.title }} - {{ site.title }}
+    {%- else -%}
+      {{ site.title }}
+    {%- endif -%}
+  </title>
+  <meta name="description" content="{% if page_t and page_t.description %}{{ page_t.description }}{% elsif page.description %}{{ page.description }}{% else %}{{ t.meta.site_description }}{% endif %}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% for alt_lang in site.languages %}
+    {% assign alt_url = page.url | lang_url: alt_lang %}
+    <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | absolute_url }}">
+  {% endfor %}
   <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">

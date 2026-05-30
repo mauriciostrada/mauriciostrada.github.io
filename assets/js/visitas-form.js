@@ -11,7 +11,9 @@
     var open = panel.hidden;
     panel.hidden = !open;
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    toggle.textContent = open ? 'Ocultar formulario' : 'Añadir comentario';
+    toggle.textContent = open
+      ? (toggle.getAttribute('data-label-close') || toggle.textContent)
+      : (toggle.getAttribute('data-label-open') || toggle.textContent);
     if (open) {
       var first = panel.querySelector('input, textarea');
       if (first) first.focus();
@@ -24,7 +26,7 @@
     var answer = parseInt(document.getElementById('visitas-spam').value, 10);
     if (answer !== 8) {
       event.preventDefault();
-      window.alert('La verificación no es correcta. 6 + 2 = 8');
+      window.alert(document.body.getAttribute('data-spam-error-reviews') || 'Verification failed.');
     }
   });
 })();

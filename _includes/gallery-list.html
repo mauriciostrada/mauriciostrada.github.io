@@ -1,7 +1,8 @@
 <ul class="gallery-list">
   {% for gallery in site.data.galleries %}
+    {% assign gallery_title = t.galleries[gallery.slug].title %}
     <li>
-      <a href="{{ gallery.url | relative_url }}">{{ gallery.title }}</a>
+      <a href="{{ gallery.url | lang_url | relative_url }}">{{ gallery_title }}</a>
     </li>
   {% endfor %}
 </ul>

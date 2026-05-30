@@ -1,5 +1,15 @@
-<select class="language-selector notranslate" title="Selecciona el idioma para la web" aria-label="Idioma">
+<select
+  class="language-selector notranslate"
+  title="{{ t.ui.lang_select_title }}"
+  aria-label="{{ t.ui.lang_select_label }}"
+  data-current-lang="{{ site.active_lang | default: 'es' }}"
+>
   {% for lang in site.data.languages %}
-    <option value="{{ lang.code }}" {% if lang.code == site.lang %}selected{% endif %} data-lang="{{ lang.name }}">{{ lang.label }}</option>
+    {% assign switch_url = page.url | lang_url: lang.code %}
+    <option
+      value="{{ lang.code }}"
+      data-url="{{ switch_url | relative_url }}"
+      {% if lang.code == site.active_lang %}selected{% endif %}
+    >{{ lang.label }}</option>
   {% endfor %}
 </select>

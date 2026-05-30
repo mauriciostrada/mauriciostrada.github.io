@@ -1,22 +1,22 @@
-- title: Bodas
+- slug: bodas
   url: /galerias/bodas/
-- title: Álbumes impresos
+- slug: albumes-impresos
   url: /galerias/albumes-impresos/
-- title: Book
+- slug: book
   url: /galerias/book/
-- title: Fotografía erótica
+- slug: erotic-photography
   url: /galerias/erotic-photography/
-- title: Celebridades
+- slug: celebridades
   url: /galerias/celebridades/
-- title: Publicidad
+- slug: publicidad
   url: /galerias/publicidad/
-- title: Viajes
+- slug: viajes
   url: /galerias/viajes/
-- title: Niñ@s
+- slug: ninos
   url: /galerias/ninos/
-- title: Producto
+- slug: producto
   url: /galerias/producto/
-- title: Retratos de familia
+- slug: retratos-de-familia
   url: /galerias/retratos-de-familia/
-- title: Vídeos externos
+- slug: videos-externos
   url: /galerias/videos-externos/

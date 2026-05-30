@@ -1,10 +1,10 @@
-    <h1 class="section-title section-title--spaced">Soy Mauricio</h1>
+    <h1 class="section-title section-title--spaced">{{ t.pages.about.headline }}</h1>
 
     <div class="biografia-columns">
       <div class="biografia-col biografia-col--photo">
         <img
           src="{{ '/assets/images/biografia/mauricio.jpg' | relative_url }}"
-          alt="Mauricio Strada - fotógrafo profesional"
+          alt="{{ t.pages.about.photo_alt }}"
           class="biografia-photo"
           loading="lazy"
           decoding="async"
@@ -12,44 +12,38 @@
       </div>
 
       <div class="biografia-col biografia-col--text">
-        <p class="biografia-lead"><strong>fotógrafo de bodas con base en Suiza</strong></p>
-        <p>Llevo más de 11 años capturando momentos significativos en la vida de las personas, siempre con un enfoque tranquilo, organizado y natural.</p>
-        <p>Creo que una gran fotografía de boda no consiste solo en imágenes bonitas, sino en confianza, planificación y conexión emocional.</p>
-        <p>Cada pareja es diferente. Por eso me tomo el tiempo de entender quiénes sois, qué os importa y cómo queréis vivir el día de vuestra boda.</p>
-        <p>Mi objetivo es sencillo: ayudaros a disfrutar del día sin estrés, mientras lo documento de forma auténtica y atemporal.</p>
-        <p>Nací en Colombia y me trasladé a Europa en 2001.</p>
-        <p>Estudié fotografía artística en Canarias y después trabajé como fotógrafo freelance en Madrid, colaborando con medios y artistas internacionales.</p>
-        <p>Hoy vivo en Berna y trabajo en Suiza y en toda Europa.</p>
-        <p>Trabajo con parejas que valoran los momentos naturales, la narrativa emocional y una boda bien planificada.</p>
-        <p>Sería un honor documentar vuestra historia y crear imágenes que volváis a vivir con la misma emoción, incluso muchos años después.</p>
+        <p class="biografia-lead"><strong>{{ t.pages.about.lead }}</strong></p>
+        {% for paragraph in t.pages.about.paragraphs %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
       </div>
     </div>
 
     <div class="biografia-extra">
       <p>
-        <em>Puedes ver cómo se realizan nuestros proyectos en las galerías y en los detrás de cámaras de algunos trabajos</em>
-        <a href="{{ '/galerias/videos-externos/' | relative_url }}">en este enlace</a>.
-        Tampoco dudes en escribirnos por
-        <a href="{{ '/contactar/' | relative_url }}">el formulario de contacto</a>
-        para cualquier pregunta o información.
+        <em>{{ t.pages.about.extra_before_link }}</em>
+        <a href="{{ '/galerias/videos-externos/' | lang_url | relative_url }}">{{ t.pages.about.extra_link_text }}</a>{{ t.pages.about.extra_after_link }}
+        {{ t.pages.about.extra_contact_before }}
+        <a href="{{ '/contactar/' | lang_url | relative_url }}">{{ t.pages.about.extra_contact_link }}</a>
+        {{ t.pages.about.extra_contact_after }}
       </p>
 
-      <p>Aquí comparto este vídeo, de hace unos años, de una entrevista que me hicieron, para que me conozcas un poco mejor.</p>
+      <p>{{ t.pages.about.video_intro }}</p>
 
       <div class="biografia-video">
-        <iframe src="https://www.youtube.com/embed/zHuv_GUgaks" title="Entrevista a Mauricio Strada" allowfullscreen loading="lazy"></iframe>
+        <iframe src="https://www.youtube.com/embed/zHuv_GUgaks" title="{{ t.pages.about.video_title }}" allowfullscreen loading="lazy"></iframe>
       </div>
 
-      <h3>Eventos que ha cubierto como freelance</h3>
+      <h3>{{ t.pages.about.events_title }}</h3>
       <ul class="biografia-list">
-        {% for event in site.data.biografia-events %}
+        {% for event in t.biografia_events %}
           <li>{{ event }}</li>
         {% endfor %}
       </ul>
 
-      <h3><em>Exposiciones</em></h3>
+      <h3><em>{{ t.pages.about.exhibitions_title }}</em></h3>
       <ul class="biografia-list">
-        {% for item in site.data.biografia-exhibitions %}
+        {% for item in t.biografia_exhibitions %}
           <li>{{ item }}</li>
         {% endfor %}
       </ul>

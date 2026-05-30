@@ -6,6 +6,6 @@ Gemfile.lock
 *.gem
 node_modules/
 
-# Capturas fuente de reseñas (OCR ya volcado a _data/visitas.yml)
+# Capturas fuente de reseñas (OCR ya volcado a _data/reviews/*.yml)
 assets/images/visitas-source/
 package-lock.json

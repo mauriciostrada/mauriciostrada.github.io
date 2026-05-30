@@ -1,12 +1,12 @@
 <header class="site-header" id="site-header">
   <div class="header-inner">
     <div class="header-logo">
-      <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
+      <a href="{{ '/' | lang_url | relative_url }}" aria-label="{{ site.title }}">
         <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="site-logo" loading="lazy" decoding="async">
       </a>
     </div>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="menu-toggle" id="menu-toggle" aria-label="{{ t.ui.menu_open }}" aria-expanded="false">
       <i class="fa-solid fa-bars"></i>
     </button>
 
@@ -15,12 +15,12 @@
     </div>
   </div>
 
-  <nav class="site-nav" id="site-nav" role="navigation" aria-label="Menú principal">
+  <nav class="site-nav" id="site-nav" role="navigation" aria-label="{{ t.ui.main_nav }}">
     <ul class="nav-list">
-      {% for item in site.data.navigation %}
-        {% assign item_path = item.url | remove: '/' %}
-        <li class="nav-item{% if page.url contains item.url %} active{% endif %}">
-          <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+      {% for item in site.data.routes.nav %}
+        {% assign nav_title = t.nav[item.key] %}
+        <li class="nav-item{% if page.url contains item.path %} active{% endif %}">
+          <a href="{{ item.path | lang_url | relative_url }}" class="nav-link">{{ nav_title }}</a>
         </li>
       {% endfor %}
     </ul>

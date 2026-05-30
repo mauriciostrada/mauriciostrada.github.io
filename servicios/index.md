@@ -1,8 +1,7 @@
 ---
 layout: panel
-title: Blog
+i18n_key: blog
 permalink: /servicios/
 body_class: page-panel
+content_include: servicios-content.html
 ---
-
-Artículos y novedades del estudio.

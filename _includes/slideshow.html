@@ -1,4 +1,4 @@
-<section class="slideshow" id="slideshow" data-interval="{{ site.data.web-slideshow.interval | default: 4000 }}" aria-label="Presentación fotográfica">
+<section class="slideshow" id="slideshow" data-interval="{{ site.data.web-slideshow.interval | default: 4000 }}" aria-label="{{ t.ui.slideshow_aria }}">
   {% for image in site.data.web-slideshow.images %}
     <div class="slideshow-slide{% if forloop.first %} is-active{% endif %}">
       <img

@@ -1,76 +1,71 @@
 <form class="contact-form" id="contact-form" action="mailto:{{ site.email }}" method="post" enctype="text/plain">
   <div class="form-group">
-    <label for="contact-name">Nombre y apellidos <span class="required">*</span></label>
+    <label for="contact-name">{{ t.forms.contact.name }} <span class="required">{{ t.ui.required }}</span></label>
     <input type="text" id="contact-name" name="name" required>
   </div>
 
   <div class="form-group">
-    <label for="contact-phone">Teléfono</label>
+    <label for="contact-phone">{{ t.forms.contact.phone }}</label>
     <input type="tel" id="contact-phone" name="phone">
   </div>
 
   <div class="form-group">
-    <label for="contact-email">Correo electrónico <span class="required">*</span></label>
+    <label for="contact-email">{{ t.forms.contact.email }} <span class="required">{{ t.ui.required }}</span></label>
     <input type="email" id="contact-email" name="email" required>
   </div>
 
   <div class="form-group">
-    <label for="contact-message">Mensaje <span class="required">*</span></label>
+    <label for="contact-message">{{ t.forms.contact.message }} <span class="required">{{ t.ui.required }}</span></label>
     <textarea id="contact-message" name="message" rows="5" required></textarea>
   </div>
 
   <div class="form-group">
-    <label for="contact-event">Tipo de evento</label>
+    <label for="contact-event">{{ t.forms.contact.event_type }}</label>
     <select id="contact-event" name="event">
-      <option value="">Elige…</option>
-      <option>Boda</option>
-      <option>Comunión</option>
-      <option>Bebés</option>
-      <option>Book</option>
-      <option>Moda</option>
-      <option>Fotografía Erótica</option>
-      <option>Eventos</option>
-      <option>Publicidad</option>
-      <option>Industrial</option>
-      <option>Viajes</option>
-      <option>Arquitectura</option>
+      <option value="">{{ t.ui.choose }}</option>
+      {% for event in t.forms.contact.events %}
+        <option>{{ event }}</option>
+      {% endfor %}
     </select>
   </div>
 
   <div class="form-row">
     <div class="form-group">
-      <label for="contact-date">Fecha</label>
+      <label for="contact-date">{{ t.forms.contact.date }}</label>
       <input type="date" id="contact-date" name="date">
     </div>
     <div class="form-group">
-      <label for="contact-time">Hora</label>
+      <label for="contact-time">{{ t.forms.contact.time }}</label>
       <input type="time" id="contact-time" name="time">
     </div>
   </div>
 
   <div class="form-group">
-    <label for="contact-place">Lugar</label>
+    <label for="contact-place">{{ t.forms.contact.place }}</label>
     <input type="text" id="contact-place" name="place">
   </div>
 
   <div class="form-group">
-    <label for="contact-source">Cómo nos has conocido</label>
+    <label for="contact-source">{{ t.forms.contact.source }}</label>
     <input type="text" id="contact-source" name="source">
   </div>
 
   <div class="form-group form-group--inline">
-    <label for="contact-spam"><span class="required">*</span> 2 + 4 =</label>
+    <label for="contact-spam"><span class="required">{{ t.ui.required }}</span> {{ t.forms.contact.spam }}</label>
     <input type="number" id="contact-spam" name="spam" required>
   </div>
 
   <div class="form-group form-group--checkbox">
     <input type="checkbox" id="contact-legal" name="legal" required>
     <label for="contact-legal">
-      Acepto el <a href="#" data-legal-open="aviso">aviso legal</a> y la <a href="#" data-legal-open="privacidad">política de privacidad</a>.
-      <span class="required">*</span>
+      {{ t.forms.contact.legal }}
+      <a href="#" data-legal-open="aviso">{{ t.forms.contact.legal_notice }}</a>
+      {{ t.forms.contact.legal_and }}
+      <a href="#" data-legal-open="privacidad">{{ t.forms.contact.privacy }}</a>.
+      <span class="required">{{ t.ui.required }}</span>
     </label>
   </div>
 
-  <button type="submit" class="btn-submit">Enviar</button>
-  <p class="form-legend">* Datos obligatorios</p>
+  <button type="submit" class="btn-submit">{{ t.ui.send }}</button>
+  <p class="form-legend">{{ t.ui.required_legend }}</p>
 </form>

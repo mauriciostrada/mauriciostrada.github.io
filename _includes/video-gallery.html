@@ -1,22 +1,24 @@
 {% assign videos = site.data.videos-externos %}
 
 {% if videos == nil or videos.size == 0 %}
-  <p class="gallery-empty">No hay vídeos en esta galería todavía.</p>
+  <p class="gallery-empty">{{ t.gallery_ui.empty_videos | default: t.gallery_ui.empty }}</p>
 {% else %}
   <div class="video-gallery-grid" data-video-gallery-grid>
     {% for video in videos %}
+      {% assign video_meta = t.videos[video.youtube_id] %}
+      {% assign video_title = video_meta.title | default: video.title %}
       <button
         type="button"
         class="video-gallery-item"
         data-video-index="{{ forloop.index0 }}"
-        aria-label="Reproducir: {{ video.title | escape }}"
+        aria-label="{{ t.gallery_ui.play_video }} {{ video_title | escape }}"
       >
         {% if video.thumb %}
           <img
             class="gallery-lazy-img"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             data-src="{{ video.thumb | relative_url }}"
-            alt="{{ video.title | escape }}"
+            alt="{{ video_title | escape }}"
             decoding="async"
           >
         {% else %}
@@ -27,13 +29,13 @@
         <span class="video-gallery-play" aria-hidden="true">
           <i class="fa-solid fa-play"></i>
         </span>
-        <span class="video-gallery-caption">{{ video.title }}</span>
+        <span class="video-gallery-caption">{{ video_title }}</span>
       </button>
     {% endfor %}
   </div>
 
   <div class="gallery-lightbox video-lightbox" id="video-lightbox" hidden aria-hidden="true">
-    <button type="button" class="gallery-lightbox-close" data-video-close aria-label="Cerrar">
+    <button type="button" class="gallery-lightbox-close" data-video-close aria-label="{{ t.ui.close }}">
       <i class="fa-solid fa-xmark"></i>
     </button>
     <div class="video-lightbox-stage">
@@ -50,7 +52,9 @@
 
   <script type="application/json" id="video-lightbox-data">[
     {%- for video in videos -%}
-      {"youtube_id":{{ video.youtube_id | jsonify }},"title":{{ video.title | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}
+      {% assign video_meta = t.videos[video.youtube_id] %}
+      {% assign video_title = video_meta.title | default: video.title %}
+      {"youtube_id":{{ video.youtube_id | jsonify }},"title":{{ video_title | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
   ]</script>
 {% endif %}

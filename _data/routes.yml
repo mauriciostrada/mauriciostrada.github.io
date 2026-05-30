@@ -1,0 +1,12 @@
+# Rutas compartidas entre idiomas (no se traducen).
+nav:
+  - key: web
+    path: /web/
+  - key: galleries
+    path: /galerias/
+  - key: about
+    path: /biografia/
+  - key: reviews
+    path: /visitas/
+  - key: contact
+    path: /contactar/

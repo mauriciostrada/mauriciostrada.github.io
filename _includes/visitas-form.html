@@ -5,36 +5,37 @@
   method="post"
   enctype="text/plain"
 >
-  <input type="hidden" name="subject" value="Nueva reseña — Visitas">
+  <input type="hidden" name="subject" value="{{ t.forms.reviews.subject }}">
 
   <div class="form-group">
-    <label for="visitas-name">Nombre <span class="required">*</span></label>
+    <label for="visitas-name">{{ t.forms.reviews.name }} <span class="required">{{ t.ui.required }}</span></label>
     <input type="text" id="visitas-name" name="nombre" required autocomplete="name">
   </div>
 
   <div class="form-group">
-    <label for="visitas-email">Correo electrónico <span class="required">*</span></label>
+    <label for="visitas-email">{{ t.forms.reviews.email }} <span class="required">{{ t.ui.required }}</span></label>
     <input type="email" id="visitas-email" name="email" required autocomplete="email">
   </div>
 
   <div class="form-group">
-    <label for="visitas-message">Comentario <span class="required">*</span></label>
+    <label for="visitas-message">{{ t.forms.reviews.message }} <span class="required">{{ t.ui.required }}</span></label>
     <textarea id="visitas-message" name="comentario" rows="4" required></textarea>
   </div>
 
   <div class="form-group form-group--inline">
-    <label for="visitas-spam"><span class="required">*</span> 6 + 2 =</label>
+    <label for="visitas-spam"><span class="required">{{ t.ui.required }}</span> {{ t.forms.reviews.spam }}</label>
     <input type="number" id="visitas-spam" name="verificacion" required inputmode="numeric" aria-describedby="visitas-spam-hint">
   </div>
-  <p class="form-legend" id="visitas-spam-hint">Responde con 8 para enviar el formulario.</p>
+  <p class="form-legend" id="visitas-spam-hint">{{ t.forms.reviews.spam_hint }}</p>
 
   <div class="form-group form-group--checkbox">
     <input type="checkbox" id="visitas-legal" name="legal" required>
     <label for="visitas-legal">
-      He leído y acepto el <a href="#" data-legal-open="aviso">aviso legal</a>.
-      <span class="required">*</span>
+      {{ t.forms.reviews.legal }}
+      <a href="#" data-legal-open="aviso">{{ t.forms.reviews.legal_notice }}</a>.
+      <span class="required">{{ t.ui.required }}</span>
     </label>
   </div>
 
-  <button type="submit" class="btn-submit">Enviar</button>
+  <button type="submit" class="btn-submit">{{ t.ui.send }}</button>
 </form>
