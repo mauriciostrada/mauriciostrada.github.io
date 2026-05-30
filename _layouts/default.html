@@ -40,5 +40,8 @@
     {% if page.video_gallery %}
       <script src="{{ '/assets/js/video-gallery.js' | relative_url }}" defer></script>
     {% endif %}
+    {% if page.layout == 'visitas' %}
+      <script src="{{ '/assets/js/visitas-form.js' | relative_url }}" defer></script>
+    {% endif %}
   </body>
 </html>

@@ -40,13 +40,13 @@
       },
       {
         root: null,
-        rootMargin: '300px 0px',
-        threshold: 0
+        rootMargin: '200px 0px',
+        threshold: 0.01
       }
     );
 
     images.forEach(function (img) {
-      if (!img.getAttribute('src')) {
+      if (!img.getAttribute('src') && !img.getAttribute('width')) {
         img.src = PLACEHOLDER;
       }
       observer.observe(img);

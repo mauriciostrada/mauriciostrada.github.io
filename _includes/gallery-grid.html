@@ -14,9 +14,16 @@
       >
         <img
           class="gallery-lazy-img"
+          {% unless image.width and image.height %}
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          {% endunless %}
           data-src="{{ image.path | relative_url }}"
           alt="{{ image.alt | escape }}"
+          {% if image.width and image.height %}
+          width="{{ image.width }}"
+          height="{{ image.height }}"
+          style="aspect-ratio: {{ image.width }} / {{ image.height }};"
+          {% endif %}
           decoding="async"
         >
       </button>

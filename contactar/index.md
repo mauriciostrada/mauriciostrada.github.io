@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Contacto
-section_class: page-section--contact
 permalink: /contactar/
+body_class: page-panel
+panel_narrow: true
+description: Contacta con Mauricio Strada Photography.
 ---
 
-Teléfono: {{ site.phone.es }} / {{ site.phone.ch }}
-
-Email: [{{ site.email }}](mailto:{{ site.email }})
+<p class="panel-lead">Teléfono: <strong>{{ site.phone.es }}</strong> / <strong>{{ site.phone.ch }}</strong></p>
+<p class="panel-lead">Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 
 {% include contact-form.html %}
