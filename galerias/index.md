@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: panel
 title: Galerías
 permalink: /galerias/
 body_class: page-panel

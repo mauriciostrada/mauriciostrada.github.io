@@ -1,5 +1,4 @@
 ---
-layout: gallery-videos
 title: Vídeos externos
 permalink: /galerias/videos-externos/
 video_gallery: true

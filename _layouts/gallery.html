@@ -4,12 +4,10 @@ body_class: page-gallery
 ---
 
 <section class="gallery-page">
-  <header class="gallery-header">
-    <h1 class="section-title gallery-title">{{ page.title }}</h1>
-    {% if page.description %}
-      <p class="gallery-description">{{ page.description }}</p>
-    {% endif %}
-  </header>
-
-  {% include gallery-grid.html %}
+  {% include gallery-page-header.html %}
+  {% if page.video_gallery %}
+    {% include video-gallery.html %}
+  {% else %}
+    {% include gallery-grid.html %}
+  {% endif %}
 </section>

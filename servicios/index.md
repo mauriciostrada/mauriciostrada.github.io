@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: panel
 title: Blog
 permalink: /servicios/
 body_class: page-panel

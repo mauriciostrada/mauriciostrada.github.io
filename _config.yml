@@ -17,9 +17,30 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - node_modules
+  - scripts
+  - assets/images/visitas-source
 
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+
+  - scope:
+      path: "galerias"
+      type: pages
+    values:
+      layout: gallery
+      body_class: page-gallery
+      scripts:
+        - lazy-images
+        - gallery
+
+  - scope:
+      path: "galerias/videos-externos"
+      type: pages
+    values:
+      scripts:
+        - lazy-images
+        - video-gallery

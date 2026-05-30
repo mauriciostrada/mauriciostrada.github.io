@@ -1,0 +1,7 @@
+{% unless page.slideshow or page.gallery_folder or page.video_gallery %}
+  <div
+    class="page-bg"
+    style="background-image: url('{{ '/assets/images/background.jpg' | relative_url }}');"
+    aria-hidden="true"
+  ></div>
+{% endunless %}

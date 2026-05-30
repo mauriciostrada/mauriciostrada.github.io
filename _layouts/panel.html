@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include panel-shell-open.html %}
+    {% if page.title and page.panel_show_title != false %}
+      <h1 class="section-title">{{ page.title }}</h1>
+    {% endif %}
+    <div class="panel-page__content">
+      {% if page.content_include %}
+        {% include {{ page.content_include }} %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
+{% include panel-shell-close.html %}

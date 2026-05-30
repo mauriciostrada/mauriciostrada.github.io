@@ -1,0 +1,6 @@
+{% assign script_list = page.scripts %}
+{% if script_list %}
+  {% for script in script_list %}
+    <script src="{{ '/assets/js/' | append: script | append: '.js' | relative_url }}" defer></script>
+  {% endfor %}
+{% endif %}

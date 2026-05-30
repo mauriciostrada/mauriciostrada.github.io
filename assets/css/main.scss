@@ -707,6 +707,19 @@ body.legal-modal-open {
   font-weight: normal;
 }
 
+.section-title--spaced {
+  margin-bottom: 2rem;
+}
+
+.section-title--compact {
+  margin-bottom: 0.5rem;
+}
+
+.section-title--sub {
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  margin-bottom: 0.5rem;
+}
+
 .panel-page__content .gallery-list {
   list-style: none;
   padding: 0;
@@ -1011,11 +1024,6 @@ body.legal-modal-open {
 }
 
 /* Biografía */
-.biografia-headline {
-  @extend .section-title;
-  margin-bottom: 2rem;
-}
-
 .biografia-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1106,10 +1114,6 @@ body.legal-modal-open {
 }
 
 /* Visitas (reseñas) */
-.visitas-title {
-  @extend .section-title;
-}
-
 .visitas-intro {
   text-align: center;
   line-height: 1.65;
@@ -1265,12 +1269,6 @@ body.legal-modal-open {
   }
 }
 
-.visitas-form-title {
-  @extend .section-title;
-  font-size: clamp(1.15rem, 3vw, 1.5rem);
-  margin-bottom: 0.5rem;
-}
-
 .visitas-form-note {
   text-align: center;
   font-size: 0.9rem;
@@ -1300,11 +1298,6 @@ body.legal-modal-open {
   margin: 0 auto;
   padding: 1.5rem 1rem;
   text-align: center;
-}
-
-.gallery-title {
-  @extend .section-title;
-  margin-bottom: 0.5rem;
 }
 
 .gallery-description {

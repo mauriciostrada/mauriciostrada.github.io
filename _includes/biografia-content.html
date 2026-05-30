@@ -1,8 +1,16 @@
-<section class="panel-page">
-  <div class="panel-page__inner">
-    <h1 class="section-title biografia-headline">Soy Mauricio</h1>
+    <h1 class="section-title section-title--spaced">Soy Mauricio</h1>
 
     <div class="biografia-columns">
+      <div class="biografia-col biografia-col--photo">
+        <img
+          src="{{ '/assets/images/biografia/mauricio.jpg' | relative_url }}"
+          alt="Mauricio Strada - fotógrafo profesional"
+          class="biografia-photo"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
       <div class="biografia-col biografia-col--text">
         <p class="biografia-lead"><strong>fotógrafo de bodas con base en Suiza</strong></p>
         <p>Llevo más de 11 años capturando momentos significativos en la vida de las personas, siempre con un enfoque tranquilo, organizado y natural.</p>
@@ -14,16 +22,6 @@
         <p>Hoy vivo en Berna y trabajo en Suiza y en toda Europa.</p>
         <p>Trabajo con parejas que valoran los momentos naturales, la narrativa emocional y una boda bien planificada.</p>
         <p>Sería un honor documentar vuestra historia y crear imágenes que volváis a vivir con la misma emoción, incluso muchos años después.</p>
-      </div>
-
-      <div class="biografia-col biografia-col--photo">
-        <img
-          src="{{ '/assets/images/biografia/mauricio.jpg' | relative_url }}"
-          alt="Mauricio Strada - fotógrafo profesional"
-          class="biografia-photo"
-          loading="lazy"
-          decoding="async"
-        >
       </div>
     </div>
 
@@ -56,5 +54,3 @@
         {% endfor %}
       </ul>
     </div>
-  </div>
-</section>
