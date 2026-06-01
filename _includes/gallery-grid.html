@@ -1,32 +1,40 @@
+{% comment %}
+  Galería masonry. Recibe (include.folder) o usa page.gallery_folder.
+  - site.data.gallery_catalog[slug] -> lista plana en orden original (para lightbox / lazy).
+  - site.data.gallery_layout[slug]  -> reparto greedy para escritorio (render sin saltos).
+  Los breakpoints y el nº de columnas son configurables desde _config.yml (clave: gallery).
+{% endcomment %}
 {% assign gallery_folder = include.folder | default: page.gallery_folder %}
 {% assign images = site.data.gallery_catalog[gallery_folder] %}
+{% assign columns = site.data.gallery_layout[gallery_folder] %}
+
+{% assign cfg = site.gallery %}
+{% assign cols_desktop = cfg.columns_desktop | default: 3 %}
+{% assign cols_tablet = cfg.columns_tablet | default: 2 %}
+{% assign cols_mobile = cfg.columns_mobile | default: 1 %}
+{% assign bp_tablet = cfg.breakpoint_tablet | default: 1000 %}
+{% assign bp_mobile = cfg.breakpoint_mobile | default: 600 %}
 
 {% if images == nil or images.size == 0 %}
   <p class="gallery-empty">{{ t.gallery_ui.empty }}</p>
 {% else %}
-  <div class="gallery-grid" data-gallery-grid>
-    {% for image in images %}
-      <button
-        type="button"
-        class="gallery-item"
-        data-gallery-index="{{ forloop.index0 }}"
-        aria-label="{{ t.gallery_ui.view_image }} {{ forloop.index }} {{ t.gallery_ui.of }} {{ images.size }}"
-      >
-        <img
-          class="gallery-lazy-img"
-          {% unless image.width and image.height %}
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          {% endunless %}
-          data-src="{{ image.path | relative_url }}"
-          alt="{{ image.alt | escape }}"
-          {% if image.width and image.height %}
-          width="{{ image.width }}"
-          height="{{ image.height }}"
-          style="aspect-ratio: {{ image.width }} / {{ image.height }};"
-          {% endif %}
-          decoding="async"
-        >
-      </button>
+  <div
+    class="masonry"
+    data-masonry
+    data-total="{{ images.size }}"
+    data-cols-desktop="{{ cols_desktop }}"
+    data-cols-tablet="{{ cols_tablet }}"
+    data-cols-mobile="{{ cols_mobile }}"
+    data-bp-tablet="{{ bp_tablet }}"
+    data-bp-mobile="{{ bp_mobile }}"
+    data-rendered-cols="{{ columns.size }}"
+  >
+    {% for column in columns %}
+      <div class="masonry__col">
+        {% for image in column %}
+          {% include gallery-item.html image=image total=images.size sizes_desktop=cols_desktop sizes_tablet=cols_tablet bp_tablet=bp_tablet bp_mobile=bp_mobile %}
+        {% endfor %}
+      </div>
     {% endfor %}
   </div>
 

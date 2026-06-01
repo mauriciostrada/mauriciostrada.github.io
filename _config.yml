@@ -16,6 +16,14 @@ phone:
   es: "+34 643 85 18 84"
   ch: "+41 779448470"
 
+# Galerías masonry: nº de columnas y breakpoints (px). Configurable.
+gallery:
+  columns_desktop: 3
+  columns_tablet: 2
+  columns_mobile: 1
+  breakpoint_tablet: 1000
+  breakpoint_mobile: 600
+
 sass:
   style: compressed
   sourcemap: never
@@ -46,7 +54,7 @@ defaults:
       layout: gallery
       body_class: page-gallery
       scripts:
-        - lazy-images
+        - gallery-masonry
         - gallery
 
   - scope:

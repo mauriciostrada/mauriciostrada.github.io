@@ -1312,54 +1312,75 @@ body.legal-modal-open {
   padding: 3rem 1rem;
 }
 
-.gallery-grid {
+/* Masonry: columnas independientes en flex. El nº de columnas y el reparto
+   los controla gallery-masonry.js; aquí solo definimos la estética. Sin
+   separación horizontal ni vertical y cada imagen al 100% del ancho. */
+.masonry {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
   width: 100%;
-  max-width: none;
   margin: 0;
   padding: 0;
-  column-count: 3;
-  column-gap: 0;
-
-  @media (max-width: 1000px) {
-    column-count: 2;
-  }
-
-  @media (max-width: 600px) {
-    column-count: 1;
-  }
+  line-height: 0;
 }
 
-.gallery-item {
+.masonry__col {
+  flex: 1 1 0;
+  min-width: 0;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.masonry__item {
   display: block;
   width: 100%;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0;
   border-radius: 0;
   background: none;
   cursor: zoom-in;
   overflow: hidden;
-  break-inside: avoid;
   line-height: 0;
 
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    vertical-align: top;
-  }
-
-  .gallery-lazy-img[data-src] {
-    background: #e8e8e8;
-  }
-
-  .gallery-lazy-img.is-loaded {
-    background: transparent;
-  }
-
-  &:hover img {
+  &:hover .masonry__img.is-loaded {
     opacity: 0.95;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #111;
+    outline-offset: -3px;
+  }
+}
+
+/* El marco reserva el espacio exacto (aspect-ratio) antes de descargar la
+   imagen, de modo que no se produce ningún salto de layout (CLS = 0). */
+.masonry__frame {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #e8e8e8;
+
+  picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.masonry__img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+
+  &.is-loaded {
+    opacity: 1;
   }
 }
 

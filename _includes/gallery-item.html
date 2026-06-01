@@ -1,0 +1,61 @@
+{% comment %}
+  Una foto de la galería.
+  Parámetros: image, total, sizes_desktop, sizes_tablet, bp_tablet, bp_mobile.
+
+  Contrato de datos (image):
+    - path        : ruta del WebP (fallback obligatorio).
+    - width/height: dimensiones reales -> reservan espacio (aspect-ratio) y evitan CLS.
+    - alt         : texto alternativo.
+    - index       : posición en el orden original de la galería.
+  Opcionales (si en el futuro se generan variantes responsive):
+    - srcset_avif : srcset con varias anchuras en AVIF.
+    - srcset_webp : srcset con varias anchuras en WebP.
+  Mientras no existan esas variantes, se sirve un único WebP.
+{% endcomment %}
+{% assign image = include.image %}
+{% assign total = include.total %}
+{% assign cols_desktop = include.sizes_desktop | default: 3 %}
+{% assign cols_tablet = include.sizes_tablet | default: 2 %}
+{% assign bp_tablet = include.bp_tablet | default: 1000 %}
+{% assign bp_mobile = include.bp_mobile | default: 600 %}
+
+{% assign vw_desktop = 100 | divided_by: cols_desktop %}
+{% assign vw_tablet = 100 | divided_by: cols_tablet %}
+{% capture sizes_attr %}(max-width: {{ bp_mobile }}px) 100vw, (max-width: {{ bp_tablet }}px) {{ vw_tablet }}vw, {{ vw_desktop }}vw{% endcapture %}
+
+<button
+  type="button"
+  class="masonry__item"
+  data-gallery-index="{{ image.index }}"
+  aria-label="{{ t.gallery_ui.view_image }} {{ image.index | plus: 1 }} {{ t.gallery_ui.of }} {{ total }}"
+>
+  <span
+    class="masonry__frame"
+    {% if image.width and image.height %}style="aspect-ratio: {{ image.width }} / {{ image.height }}"{% endif %}
+  >
+    <picture>
+      {% if image.srcset_avif %}<source type="image/avif" data-srcset="{{ image.srcset_avif }}" sizes="{{ sizes_attr }}">{% endif %}
+      {% if image.srcset_webp %}<source type="image/webp" data-srcset="{{ image.srcset_webp }}" sizes="{{ sizes_attr }}">{% endif %}
+      <img
+        class="masonry__img"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        data-src="{{ image.path | relative_url }}"
+        {% if image.srcset_webp %}data-srcset="{{ image.srcset_webp }}" sizes="{{ sizes_attr }}"{% endif %}
+        alt="{{ image.alt | escape }}"
+        {% if image.width and image.height %}width="{{ image.width }}" height="{{ image.height }}"{% endif %}
+        loading="lazy"
+        decoding="async"
+      >
+    </picture>
+  </span>
+  <noscript>
+    <img
+      class="masonry__img is-loaded"
+      src="{{ image.path | relative_url }}"
+      alt="{{ image.alt | escape }}"
+      {% if image.width and image.height %}width="{{ image.width }}" height="{{ image.height }}"{% endif %}
+      loading="lazy"
+      decoding="async"
+    >
+  </noscript>
+</button>
