@@ -1,0 +1,5 @@
+# Overlay para GitHub Pages (usuario: maauriciostrada.github.io).
+# Se combina con _config.yml en el workflow de CI:
+#   jekyll build --config _config.yml,_config.github.yml
+url: https://mauriciostrada.github.io
+baseurl: ""
