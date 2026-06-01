@@ -6,7 +6,7 @@ $color-text: #080707;
 $color-bg: #ffffff;
 $color-menu-bg: rgba(250, 247, 247, 0.88);
 $color-text-section-bg: rgba(245, 242, 242, 1);
-$color-footer-bg: rgba(235, 230, 230, 0.9);
+$color-footer-bg: #ffffff;
 $color-block-border: #cccccc;
 $font-body: 'Lato', sans-serif;
 $font-slogan: 'Kaushan Script', cursive;
@@ -480,6 +480,7 @@ a {
   background: $color-footer-bg;
   padding: 1rem;
   margin-top: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .footer-inner {
@@ -895,14 +896,6 @@ body.legal-modal-open {
     display: none;
   }
 
-  .site-footer {
-    background: transparent;
-  }
-
-  .page-home .site-footer {
-    background: transparent;
-  }
-
   .footer-inner {
     flex-direction: column;
     text-align: center;
@@ -977,7 +970,7 @@ body.legal-modal-open {
     left: 0;
     right: 0;
     z-index: 2;
-    background: rgba(235, 230, 230, 0.9);
+    background: $color-footer-bg;
     margin-top: 0;
   }
 
