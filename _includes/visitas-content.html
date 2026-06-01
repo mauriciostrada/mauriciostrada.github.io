@@ -1,4 +1,4 @@
-{% assign lang = site.active_lang | default: 'es' %}
+{% assign lang = site.lang | default: 'es' %}
 {% assign reviews = site.data.reviews[lang].reviews %}
 {% if reviews == nil or reviews.size == 0 %}
   {% assign reviews = site.data.reviews.es.reviews %}

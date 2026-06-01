@@ -1,5 +1,5 @@
-{% assign lang = site.active_lang | default: site.lang | default: 'es' %}
-{% assign t = site.data.i18n[lang] %}
+{% assign lang = site.lang | default: 'es' %}
+{% assign t = site.translations[lang] %}
 {% if t == nil or t.size == 0 %}
-  {% assign t = site.data.i18n.es %}
+  {% assign t = site.translations.es %}
 {% endif %}

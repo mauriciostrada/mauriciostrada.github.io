@@ -24,21 +24,34 @@ gallery:
   breakpoint_tablet: 1000
   breakpoint_mobile: 600
 
+plugins:
+  - jekyll-multiple-languages-plugin
+
+exclude_from_localization:
+  - assets
+
 sass:
   style: compressed
   sourcemap: never
 
-# jekyll-polyglot: no duplicar estáticos en /de/, /en/, /fr/
-exclude_from_localization:
-  - assets
+timezone: Europe/Zurich
+
+markdown: kramdown
 
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
   - README.md
-  - node_modules
-  - scripts
-  - assets/images/visitas-source
+  - node_modules/
+  - scripts/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - assets/images/visitas-source/
 
 defaults:
   - scope:
@@ -64,8 +77,3 @@ defaults:
       scripts:
         - lazy-images
         - video-gallery
-
-parallel_localization: true
-
-plugins:
-  - jekyll-polyglot

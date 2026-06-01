@@ -5,11 +5,16 @@ module Jekyll
     module_function
 
     def active_lang(site)
-      site.active_lang || site.config["default_lang"] || "es"
+      site.config["lang"] || site.config["default_lang"] || "es"
     end
 
     def locale_data(site, lang = nil)
       lang ||= active_lang(site)
+      translations = site.config["translations"] || site.parsed_translations
+      if translations.is_a?(Hash) && translations[lang]
+        return translations[lang]
+      end
+
       site.data.dig("i18n", lang) || site.data.dig("i18n", "es") || {}
     end
 

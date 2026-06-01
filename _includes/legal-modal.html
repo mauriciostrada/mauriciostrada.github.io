@@ -1,4 +1,4 @@
-{% assign lang = site.active_lang | default: 'es' %}
+{% assign lang = site.lang | default: 'es' %}
 {% assign legal = site.data.legal[lang] %}
 {% if legal == nil or legal.size == 0 %}
   {% assign legal = site.data.legal.es %}
