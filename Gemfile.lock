@@ -13,12 +13,17 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.4)
+    ffi (1.17.4-aarch64-linux-gnu)
     ffi (1.17.4-arm64-darwin)
     ffi (1.17.4-x86-linux-gnu)
     ffi (1.17.4-x86-linux-musl)
     ffi (1.17.4-x86_64-darwin)
+    ffi (1.17.4-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     google-protobuf (4.35.0)
+      bigdecimal
+      rake (~> 13.3)
+    google-protobuf (4.35.0-aarch64-linux-gnu)
       bigdecimal
       rake (~> 13.3)
     google-protobuf (4.35.0-arm64-darwin)
@@ -31,6 +36,9 @@ GEM
       bigdecimal
       rake (~> 13.3)
     google-protobuf (4.35.0-x86_64-darwin)
+      bigdecimal
+      rake (~> 13.3)
+    google-protobuf (4.35.0-x86_64-linux-gnu)
       bigdecimal
       rake (~> 13.3)
     http_parser.rb (0.8.1)
@@ -96,11 +104,13 @@ GEM
     webrick (1.9.2)
 
 PLATFORMS
+  aarch64-linux-gnu
   arm64-darwin
   ruby
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
+  x86_64-linux-gnu
 
 DEPENDENCIES
   jekyll (~> 4.4)
